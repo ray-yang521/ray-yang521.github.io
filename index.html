@@ -406,8 +406,8 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/6.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day. $('.bg-cover').css('background-image', 'url(/medias/banner/4.jpg)');
+	$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
 
 
@@ -466,30 +466,6 @@
         
             
             <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/28.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">PPT分享-GeoInsider 第22期：基于Earth Engine与开源GIS的云计算与交互式制图</div>
-                            <div class="description center-align">
-                                
-                                    引言
-本文是我在参加了GeoInsider 第22期分享后记录的相关信息和心得。在网页上，用户可以便捷使用google engine近四十年来的landsat和modis卫星数据进行遥感分析，一切的计算分析过程都在云端进行，不需要消耗本地的
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2020/05/31/ppt-fen-xiang-geoinsider-di-22-qi-ji-yu-earth-engine-yu-kai-yuan-gis-de-yun-ji-suan-yu-jiao-hu-shi-zhi-tu/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
                  style="background-image: url('/medias/featureimages/10.jpg');">
                 <div class="container">
                     <div class="row">
@@ -529,6 +505,30 @@ AOP主要编程对象是切面（a
                             </div>
                             <div class="cover-btns">
                                 <a href="/2020/03/09/spring-aop-de-xiang-guan-ji-chu-jie-shao/" class="waves-effect waves-light btn"
+                                   target="_blank">
+                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="carousel-item amber white-text carousel-post bg-cover"
+                 style="background-image: url('/medias/featureimages/28.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="title center-align">PPT分享-GeoInsider 第22期：基于Earth Engine与开源GIS的云计算与交互式制图</div>
+                            <div class="description center-align">
+                                
+                                    引言
+本文是我在参加了GeoInsider 第22期分享后记录的相关信息和心得。在网页上，用户可以便捷使用google engine近四十年来的landsat和modis卫星数据进行遥感分析，一切的计算分析过程都在云端进行，不需要消耗本地的
+                                
+                            </div>
+                            <div class="cover-btns">
+                                <a href="/2020/05/31/ppt-fen-xiang-geoinsider-di-22-qi-ji-yu-earth-engine-yu-kai-yuan-gis-de-yun-ji-suan-yu-jiao-hu-shi-zhi-tu/" class="waves-effect waves-light btn"
                                    target="_blank">
                                     <i class="icon fa fa-eye fa-fw"></i>阅读更多
                                 </a>
@@ -722,6 +722,28 @@ public class Car {
     
     
     <div class="col s12" >
+        <div class="post-card" style="background-image: url('/medias/featureimages/10.jpg')">
+            <div class="post-body">
+                <div class="post-categories">
+                    
+                        
+                            <a href="/categories/EnvConfig/" class="category">EnvConfig</a>
+                        
+                    
+                </div>
+                <a href="/2020/02/20/hexo-bo-ke-xi-tong-de-da-jian/">
+                    <h3 class="post-title">Hexo博客系统的搭建</h3>
+                </a>
+                <p class="post-description">引言：Hexo可以理解为是基于node.js制作的一个博客工具，不是我们理解的一个开源的博客系统。通过markdown编写文章，然后hexo帮我们生成静态的html页面，</p>
+                <a href="/2020/02/20/hexo-bo-ke-xi-tong-de-da-jian/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
+                    <i class="icon far fa-eye fa-fw"></i>阅读更多
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col s12 m6" data-aos="zoom-in-up">
         <div class="post-card" style="background-image: url('/medias/featureimages/28.jpg')">
             <div class="post-body">
                 <div class="post-categories">
@@ -735,30 +757,8 @@ public class Car {
                     <h3 class="post-title">PPT分享-GeoInsider 第22期：基于Earth Engine与开源GIS的云计算与交互式制图</h3>
                 </a>
                 <p class="post-description">引言
-本文是我在参加了GeoInsider 第22期分享后记录的相关信息和心得。在网页上，用户可以便捷使用google engine近四十年来的landsat和modis</p>
-                <a href="/2020/05/31/ppt-fen-xiang-geoinsider-di-22-qi-ji-yu-earth-engine-yu-kai-yuan-gis-de-yun-ji-suan-yu-jiao-hu-shi-zhi-tu/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #FF5E3A 0%, #FF2A68 100%)" target="_blank">
-                    <i class="icon far fa-eye fa-fw"></i>阅读更多
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    
-    <div class="col s12 m6" data-aos="zoom-in-up">
-        <div class="post-card" style="background-image: url('/medias/featureimages/10.jpg')">
-            <div class="post-body">
-                <div class="post-categories">
-                    
-                        
-                            <a href="/categories/EnvConfig/" class="category">EnvConfig</a>
-                        
-                    
-                </div>
-                <a href="/2020/02/20/hexo-bo-ke-xi-tong-de-da-jian/">
-                    <h3 class="post-title">Hexo博客系统的搭建</h3>
-                </a>
-                <p class="post-description">引言：Hexo可以理解为是基于node.js制作的一个博客工具，不是我们理解的一个开源的博客系统。通过markdown编写文章，然后hexo</p>
-                <a href="/2020/02/20/hexo-bo-ke-xi-tong-de-da-jian/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
+本文是我在参加了GeoInsider 第22期分享后记录的相关信息和心得。在网页上，用户可以便捷使用google engine近四十年</p>
+                <a href="/2020/05/31/ppt-fen-xiang-geoinsider-di-22-qi-ji-yu-earth-engine-yu-kai-yuan-gis-de-yun-ji-suan-yu-jiao-hu-shi-zhi-tu/" class="read-more btn waves-effect waves-light" style="background: linear-gradient(to right, #EF4DB6 0%, #C643FC 100%)" target="_blank">
                     <i class="icon far fa-eye fa-fw"></i>阅读更多
                 </a>
             </div>
