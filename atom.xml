@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangminghong.top/"/>
-  <updated>2020-06-06T09:28:48.525Z</updated>
+  <updated>2020-07-24T12:54:46.052Z</updated>
   <id>http://yangminghong.top/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python安装第三方库的方法汇总</title>
+    <link href="http://yangminghong.top/2020/07/24/python-an-zhuang-di-san-fang-ku-de-fang-fa-hui-zong/"/>
+    <id>http://yangminghong.top/2020/07/24/python-an-zhuang-di-san-fang-ku-de-fang-fa-hui-zong/</id>
+    <published>2020-07-24T12:33:33.000Z</published>
+    <updated>2020-07-24T12:54:46.052Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="http://yangminghong.top/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="python" scheme="http://yangminghong.top/tags/python/"/>
+    
+      <category term="环境配置" scheme="http://yangminghong.top/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo+Github博客搭建完全教程（转载）</title>
     <link href="http://yangminghong.top/2020/06/04/hexo-github-bo-ke-da-jian-wan-quan-jiao-cheng-zhuan-zai/"/>
     <id>http://yangminghong.top/2020/06/04/hexo-github-bo-ke-da-jian-wan-quan-jiao-cheng-zhuan-zai/</id>
     <published>2020-06-03T17:34:42.000Z</published>
-    <updated>2020-06-06T09:28:48.525Z</updated>
+    <updated>2020-07-23T09:02:53.937Z</updated>
     
     <summary type="html">
     
@@ -552,35 +581,6 @@
 &lt;li&gt;CarFactoryBean.java&lt;/li&gt;
 &lt;li&gt;Main.java&lt;/li&gt;
 &lt;li&gt;beans-beanfactory.xml&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring中使用工厂方法配置Bean(静态工厂,实例工厂)</title>
-    <link href="http://yangminghong.top/2020/03/08/spring-zhong-shi-yong-gong-han-fang-fa-pei-zhi-bean-jing-tai-gong-han-shi-li-gong-han/"/>
-    <id>http://yangminghong.top/2020/03/08/spring-zhong-shi-yong-gong-han-fang-fa-pei-zhi-bean-jing-tai-gong-han-shi-li-gong-han/</id>
-    <published>2020-03-08T08:36:55.000Z</published>
-    <updated>2020-06-06T09:28:48.696Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;通过静态工厂方法来配置bean，注意不是配置静态工厂方法实例，而是配置bean实例。&lt;br&gt;通过实例工厂方法来配置bean，先配置工厂的bean实例，再配置所需bean实例。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Car.java&lt;/li&gt;
-&lt;li&gt;StaticCarFactory.java&lt;/li&gt;
-&lt;li&gt;InstanceCarFactory.java&lt;/li&gt;
-&lt;li&gt;Main.java&lt;/li&gt;
-&lt;li&gt;beans-factory.xml&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
