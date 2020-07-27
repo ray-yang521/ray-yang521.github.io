@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangminghong.top/"/>
-  <updated>2020-07-24T12:54:46.052Z</updated>
+  <updated>2020-07-27T09:23:39.371Z</updated>
   <id>http://yangminghong.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>闲置手机拯救计划</title>
+    <link href="http://yangminghong.top/2020/07/27/xian-zhi-shou-ji-zheng-jiu-ji-hua/"/>
+    <id>http://yangminghong.top/2020/07/27/xian-zhi-shou-ji-zheng-jiu-ji-hua/</id>
+    <published>2020-07-27T07:20:05.000Z</published>
+    <updated>2020-07-27T09:23:39.371Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;p&gt;本方案利用了Aida64和remote
+        
+      
+    
+    </summary>
+    
+    
+      <category term="想法" scheme="http://yangminghong.top/categories/%E6%83%B3%E6%B3%95/"/>
+    
+    
+      <category term="动手捣腾" scheme="http://yangminghong.top/tags/%E5%8A%A8%E6%89%8B%E6%8D%A3%E8%85%BE/"/>
+    
+      <category term="pc状态监控" scheme="http://yangminghong.top/tags/pc%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7/"/>
+    
+      <category term="废旧手机改造" scheme="http://yangminghong.top/tags/%E5%BA%9F%E6%97%A7%E6%89%8B%E6%9C%BA%E6%94%B9%E9%80%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>python安装第三方库的方法汇总</title>
@@ -553,34 +584,6 @@
 &lt;li&gt;UserRepositoryImpl.java&lt;/li&gt;
 &lt;li&gt;Main.java&lt;/li&gt;
 &lt;li&gt;beans-annotation.xml&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring通过FactoryBean来配置bean</title>
-    <link href="http://yangminghong.top/2020/03/08/spring-tong-guo-factorybean-lai-pei-zhi-bean/"/>
-    <id>http://yangminghong.top/2020/03/08/spring-tong-guo-factorybean-lai-pei-zhi-bean/</id>
-    <published>2020-03-08T08:49:58.000Z</published>
-    <updated>2020-06-06T09:28:48.699Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;通过实现FactoryBean接口来配置bean&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Car.java&lt;/li&gt;
-&lt;li&gt;CarFactoryBean.java&lt;/li&gt;
-&lt;li&gt;Main.java&lt;/li&gt;
-&lt;li&gt;beans-beanfactory.xml&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
