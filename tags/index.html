@@ -354,7 +354,7 @@
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
 	// $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
-	$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+	$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getMinutes() + '.jpg)');
 </script>
 
 
@@ -374,10 +374,19 @@
             <div class="tag-chips">
                 
                 
+                <a href="/tags/ArcGIS/" title="ArcGIS: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="ArcGIS" style="background-color: #F9EBEA;">ArcGIS
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
                 <a href="/tags/Spring/" title="Spring: 25">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Spring" style="background-color: #F9EBEA;">Spring
+                            data-tagname="Spring" style="background-color: #F5EEF8;">Spring
                         <span class="tag-length">25</span>
                     </span>
                 </a>
@@ -386,17 +395,8 @@
                 <a href="/tags/Java/" title="Java: 25">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Java" style="background-color: #F5EEF8;">Java
+                            data-tagname="Java" style="background-color: #D5F5E3;">Java
                         <span class="tag-length">25</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/ArcGIS/" title="ArcGIS: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="ArcGIS" style="background-color: #D5F5E3;">ArcGIS
-                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -446,28 +446,10 @@
                 </a>
                 
                 
-                <a href="/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/" title="常用网站: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="常用网站" style="background-color: #A3E4D7;">常用网站
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/tags/%E5%B7%A5%E5%85%B7/" title="工具: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="工具" style="background-color: #85C1E9;">工具
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
                 <a href="/tags/python/" title="python: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="python" style="background-color: #F8C471;">python
+                            data-tagname="python" style="background-color: #A3E4D7;">python
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -476,7 +458,25 @@
                 <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" title="环境配置: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="环境配置" style="background-color: #F9E79F;">环境配置
+                            data-tagname="环境配置" style="background-color: #85C1E9;">环境配置
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/" title="常用网站: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="常用网站" style="background-color: #F8C471;">常用网站
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%B7%A5%E5%85%B7/" title="工具: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="工具" style="background-color: #F9E79F;">工具
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -559,7 +559,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"Spring","weight":25,"link":"/tags/Spring/"},{"text":"Java","weight":25,"link":"/tags/Java/"},{"text":"ArcGIS","weight":1,"link":"/tags/ArcGIS/"},{"text":"EnvConfig","weight":2,"link":"/tags/EnvConfig/"},{"text":"Windows","weight":2,"link":"/tags/Windows/"},{"text":"GIS","weight":1,"link":"/tags/GIS/"},{"text":"Python","weight":1,"link":"/tags/Python/"},{"text":"hello world","weight":1,"link":"/tags/hello-world/"},{"text":"常用网站","weight":1,"link":"/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"},{"text":"工具","weight":1,"link":"/tags/%E5%B7%A5%E5%85%B7/"},{"text":"python","weight":1,"link":"/tags/python/"},{"text":"环境配置","weight":1,"link":"/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"},{"text":"hexo","weight":1,"link":"/tags/hexo/"},{"text":"动手捣腾","weight":1,"link":"/tags/%E5%8A%A8%E6%89%8B%E6%8D%A3%E8%85%BE/"},{"text":"pc状态监控","weight":1,"link":"/tags/pc%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7/"},{"text":"废旧手机改造","weight":1,"link":"/tags/%E5%BA%9F%E6%97%A7%E6%89%8B%E6%9C%BA%E6%94%B9%E9%80%A0/"},{"text":"Hexo","weight":1,"link":"/tags/Hexo/"},{"text":"matery","weight":1,"link":"/tags/matery/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"ArcGIS","weight":1,"link":"/tags/ArcGIS/"},{"text":"Spring","weight":25,"link":"/tags/Spring/"},{"text":"Java","weight":25,"link":"/tags/Java/"},{"text":"EnvConfig","weight":2,"link":"/tags/EnvConfig/"},{"text":"Windows","weight":2,"link":"/tags/Windows/"},{"text":"GIS","weight":1,"link":"/tags/GIS/"},{"text":"Python","weight":1,"link":"/tags/Python/"},{"text":"hello world","weight":1,"link":"/tags/hello-world/"},{"text":"python","weight":1,"link":"/tags/python/"},{"text":"环境配置","weight":1,"link":"/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"},{"text":"常用网站","weight":1,"link":"/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99/"},{"text":"工具","weight":1,"link":"/tags/%E5%B7%A5%E5%85%B7/"},{"text":"hexo","weight":1,"link":"/tags/hexo/"},{"text":"动手捣腾","weight":1,"link":"/tags/%E5%8A%A8%E6%89%8B%E6%8D%A3%E8%85%BE/"},{"text":"pc状态监控","weight":1,"link":"/tags/pc%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7/"},{"text":"废旧手机改造","weight":1,"link":"/tags/%E5%BA%9F%E6%97%A7%E6%89%8B%E6%9C%BA%E6%94%B9%E9%80%A0/"},{"text":"Hexo","weight":1,"link":"/tags/Hexo/"},{"text":"matery","weight":1,"link":"/tags/matery/"}], {
         autoResize: true
     });
 </script>
