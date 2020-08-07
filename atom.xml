@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangminghong.top/"/>
-  <updated>2020-07-27T11:18:01.439Z</updated>
+  <updated>2020-08-07T08:34:19.893Z</updated>
   <id>http://yangminghong.top/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Focus on deep learning and time series forecasting with some resources and code.</title>
+    <link href="http://yangminghong.top/2020/08/07/deep-learning-time-series-master/"/>
+    <id>http://yangminghong.top/2020/08/07/deep-learning-time-series-master/</id>
+    <published>2020-08-07T08:06:08.000Z</published>
+    <updated>2020-08-07T08:34:19.893Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Deep-Learning-Time-Series-Forecasting&quot;&gt;&lt;a href=&quot;#Deep-Learning-Time-Series-Forecasting&quot; class=&quot;headerlink&quot; title=&quot;Deep Learning
+        
+      
+    
+    </summary>
+    
+    
+      <category term="备忘" scheme="http://yangminghong.top/categories/%E5%A4%87%E5%BF%98/"/>
+    
+    
+      <category term="deeplearning" scheme="http://yangminghong.top/tags/deeplearning/"/>
+    
+      <category term="time series forcasting" scheme="http://yangminghong.top/tags/time-series-forcasting/"/>
+    
+  </entry>
   
   <entry>
     <title>闲置手机拯救计划</title>
@@ -553,37 +582,6 @@
 &lt;li&gt;UserRepository.java&lt;/li&gt;
 &lt;li&gt;UserRepositoryImpl.java&lt;/li&gt;
 &lt;li&gt;UserJdbcRepositoryImpl.java&lt;/li&gt;
-&lt;li&gt;Main.java&lt;/li&gt;
-&lt;li&gt;beans-annotation.xml&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring中使用注解配置Bean(1)</title>
-    <link href="http://yangminghong.top/2020/03/08/spring-zhong-shi-yong-zhu-jie-pei-zhi-bean-1/"/>
-    <id>http://yangminghong.top/2020/03/08/spring-zhong-shi-yong-zhu-jie-pei-zhi-bean-1/</id>
-    <published>2020-03-08T09:06:27.000Z</published>
-    <updated>2020-06-06T09:28:48.697Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;在Spring中通过添加注解的方式来配置Bean，Spring容器会自动管理所扫描包(可以自行配置所要扫描的包的路径)下的标有@Component、@Controller、@Service、@Repository注解的类&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TestObject.java&lt;/li&gt;
-&lt;li&gt;UserController.java&lt;/li&gt;
-&lt;li&gt;UserService.java&lt;/li&gt;
-&lt;li&gt;UserRepository.java&lt;/li&gt;
-&lt;li&gt;UserRepositoryImpl.java&lt;/li&gt;
 &lt;li&gt;Main.java&lt;/li&gt;
 &lt;li&gt;beans-annotation.xml&lt;/li&gt;&lt;/ul&gt;
     

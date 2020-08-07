@@ -1,0 +1,2263 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Focus on deep learning and time series forecasting with some resources and code., 小杨同学のBlog">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166238192-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-166238192-1');
+</script>
+
+
+    <title>Focus on deep learning and time series forecasting with some resources and code. | 小杨同学のBlog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>	
+
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="小杨同学のBlog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">小杨同学のBlog</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于我</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">小杨同学のBlog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/ray-yang521" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/ray-yang521" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">Focus on deep learning and time series forecasting with some resources and code.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/deeplearning/">
+                                <span class="chip bg-color">deeplearning</span>
+                            </a>
+                        
+                            <a href="/tags/time-series-forcasting/">
+                                <span class="chip bg-color">time series forcasting</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E5%A4%87%E5%BF%98/" class="post-category">
+                                备忘
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-08-07
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2020-08-07
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    16 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Deep-Learning-Time-Series-Forecasting"><a href="#Deep-Learning-Time-Series-Forecasting" class="headerlink" title="Deep Learning Time Series Forecasting"></a>Deep Learning Time Series Forecasting</h1><p><a href="http://makeapullrequest.com" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRsWelcome"></a></p>
+<p>List of state of the art papers focus on deep learning and resources, code and experiments using deep learning for time series forecasting. Classic methods vs Deep Learning methods, Competitions…</p>
+<h2 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a><a href="">Table of Contents</a></h2><ul>
+<li><a href="#Papers">Papers</a></li>
+<li><a href="#Conferences">Conferences</a></li>
+<li><a href="#Competitions">Competitions</a></li>
+<li><a href="#Code">Code</a></li>
+<li><a href="#Theory-Resource">Theory-Resource</a></li>
+<li><a href="#Code-Resource">Code Resource</a></li>
+<li><a href="#Datasets">Datasets</a></li>
+</ul>
+<h2 id="Papers"><a href="#Papers" class="headerlink" title="Papers"></a>Papers</h2><h3 id="2020"><a href="#2020" class="headerlink" title="2020"></a>2020</h3><ul>
+<li><p><a href="https://ieeexplore.ieee.org/abstract/document/9149573" target="_blank" rel="noopener">Cold-Start Promotional Sales Forecasting through Gradient Boosted-based Contrastive Explanations</a></p>
+<ul>
+<li>Carlos Aguilar-Palacios, et al.</li>
+<li>[<a href="https://github.com/CarlitosDev/contrastiveExplanation/tree/master/contrastiveRegressor" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2007.15541.pdf" target="_blank" rel="noopener">Anomaly Detection at Scale: The Case for Deep Distributional Time Series Models</a></p>
+<ul>
+<li>Fadhel Ayed, et al.</li>
+<li><code>Amazon Research</code></li>
+<li>[<a href="https://github.com/awslabs/gluon-ts/tree/distribution_anomaly_detection/distribution_anomaly_detection" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://staff.fnwi.uva.nl/m.derijke/wp-content/papercite-data/pdf/ariannezhad-2020-demand.pdf" target="_blank" rel="noopener">Demand Forecasting in the Presence of Privileged Information</a></p>
+<ul>
+<li>Mozhdeh Ariannezhad, et al.</li>
+<li>[<a href="https://github.com/mzhariann/PIANN" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://www.researchgate.net/publication/342976923_Seasonal_Self-evolving_Neural_Networks_Based_Short-term_Wind_Farm_Generation_Forecast" target="_blank" rel="noopener">Seasonal Self-evolving Neural Networks Based Short-term Wind Farm Generation Forecast</a></p>
+<ul>
+<li>Yunchuan Liu, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2007.09577.pdf" target="_blank" rel="noopener">Distributed ARIMA Models for Ultra-long Time Series</a> <strong>Spark</strong></p>
+<ul>
+<li>Xiaoqian Wang, et al.</li>
+<li>[<a href="https://github.com/xqnwang/darima" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/2003.03778" target="_blank" rel="noopener">Adversarial Attacks on Probabilistic Autoregressive Forecasting Models</a></p>
+<ul>
+<li>Raphaël Dang-Nhu, et al.</li>
+<li>[<a href="https://github.com/eth-sri/probabilistic-forecasts-attacks" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2007.03568.pdf" target="_blank" rel="noopener">Superiority of Simplicity: A Lightweight Model for Network Device Workload Prediction</a> <strong>LSTM application</strong></p>
+<ul>
+<li>Alexander Acker, et al.</li>
+<li>[<a href="https://github.com/citlab/fed_challenge" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2007.02842.pdf" target="_blank" rel="noopener">Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting</a></p>
+<ul>
+<li>Lei Bai, et al.</li>
+<li>[<a href="https://github.com/LeiBAI/AGCRN" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9115645" target="_blank" rel="noopener">Dynamic Multi-Scale Convolutional Neural Network for Time Series Classification</a></p>
+<ul>
+<li>BIN QIAN, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://germain-forestier.info/publis/ijcnn2020.pdf" target="_blank" rel="noopener">Neural Architecture Search for Time Series Classification</a></p>
+<ul>
+<li>Hojjat Rakhshani, et al.</li>
+<li>[<a href="https://github.com/ML-MHs/IJCNN2020" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2006.13707.pdf" target="_blank" rel="noopener">Frequentist Uncertainty in Recurrent Neural Networks via Blockwise Influence Functions</a></p>
+<ul>
+<li>Ahmed M. Alaa and Mihaela van der Schaar.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2006.12672.pdf" target="_blank" rel="noopener">Time Series Regression</a></p>
+<ul>
+<li>Chang Wei Tan, et al.</li>
+<li>[<a href="https://github.com/ChangWeiTan/TSRegression" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://odr.chalmers.se/bitstream/20.500.12380/300824/1/Master_s_Thesis_Johan_Ramne_.pdf" target="_blank" rel="noopener">Forecasting Supplier Delivery Performance with Recurrent Neural Networks</a></p>
+<ul>
+<li>Johan Ramne</li>
+<li>Master Thesis.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2006.10119.pdf" target="_blank" rel="noopener">Markovian RNN: An Adaptive Time Series Prediction Network with HMM-based Switching for Nonstationary Environments</a></p>
+<ul>
+<li>Fatih Ilhan, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://dl.acm.org/doi/pdf/10.1145/3399579.3399869" target="_blank" rel="noopener">Resilient Neural Forecasting Systems</a></p>
+<ul>
+<li>Michael Bohlke-Schneider, et al.</li>
+<li><code>Amazon Research</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="http://openaccess.thecvf.com/content_CVPRW_2020/papers/w66/Graber_Dynamic_Neural_Relational_Inference_for_Forecasting_Trajectories_CVPRW_2020_paper.pdf" target="_blank" rel="noopener">Dynamic Neural Relational Inference for Forecasting Trajectories</a></p>
+<ul>
+<li>Colin Graber and Alexander Schwing</li>
+<li><code>CVPR 2020</code></li>
+<li>[<a href="https://github.com/cgraber/cvpr_dNRI" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/tgis.12644" target="_blank" rel="noopener">Traffic transformer: Capturing the continuity and periodicity of time series for traffic forecasting</a></p>
+<ul>
+<li>Ling Cai, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2006.06553.pdf" target="_blank" rel="noopener">Stanza: A Nonlinear State Space Model for Probabilistic Inference in Non-Stationary Time Series</a></p>
+<ul>
+<li>Anna K. Yanchenko and Sayan Mukherjee.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://www.scirp.org/journal/paperinformation.aspx?paperid=100727" target="_blank" rel="noopener">Neuroevolution Strategy for Time Series Prediction</a></p>
+<ul>
+<li>George Naskos, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://www.mdpi.com/2076-3417/10/11/3880" target="_blank" rel="noopener">COVID-19: A Comparison of Time Series Methods to Forecast Percentage of Active Cases per Population</a></p>
+<ul>
+<li>Vasilis Papastefanopoulos, et al.</li>
+<li>[<a href="https://github.com/ML-Upatras/COVID-19-A-comparison-of-time-series-methods-foractive-cases-forecasting" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2006.00630.pdf" target="_blank" rel="noopener">A machine learning approach for forecasting hierarchical time series</a></p>
+<ul>
+<li>Paolo Mancuso, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="http://www.jethrobrowell.com/uploads/4/5/4/0/45405281/probcast___pmaps2020.pdf" target="_blank" rel="noopener">ProbCast: Open-source Production, Evaluation and Visualisation of Probabilistic Forecasts</a></p>
+<ul>
+<li>Jethro Browell and Ciaran Gilbert.</li>
+<li>[<a href="https://github.com/jbrowell/ProbCast" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://ecole-itn.eu/wp-content/uploads/2020/05/IJCNN2020_Sibghat_Final.pdf" target="_blank" rel="noopener">Exploring Clinical Time Series Forecasting with Meta-Features in Variational Recurrent Models</a><strong>meta-learning</strong></p>
+<ul>
+<li>Sibghat Ullah, et al.</li>
+<li>[<a href="https://github.com/SibghatUllah13/VRNNs-for-Clinical-Time-Series-Forecasting" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://spj.sciencemag.org/plantphenomics/2020/4261965/" target="_blank" rel="noopener">Semisupervised Deep State-Space Model for Plant Growth Modeling</a></p>
+<ul>
+<li>S. Shibata, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2005.11633.pdf" target="_blank" rel="noopener">EFFECTIVE AND EFFICIENT COMPUTATION WITH MULTIPLE-TIMESCALE SPIKING RECURRENT NEURAL NETWORKS</a></p>
+<ul>
+<li>Bojian Yin, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231220300606" target="_blank" rel="noopener">Multivariate time series forecasting via attention-based encoder–decoder framework</a></p>
+<ul>
+<li>Shengdong Du, et al.</li>
+<li><code>Neurocomputing</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://www.mdpi.com/1424-8220/20/10/2832" target="_blank" rel="noopener">A Novel LSTM for Multivariate Time Series with Massive Missingness</a></p>
+<ul>
+<li>Nazanin Fouladgar and Kary Främling.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1905.10437.pdf" target="_blank" rel="noopener">N-BEATS: NEURAL BASIS EXPANSION ANALYSIS FOR INTERPRETABLE TIME SERIES FORECASTING</a><code>ICLR 2020</code></p>
+<ul>
+<li>Boris N. Oreshkin, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2005.10698.pdf" target="_blank" rel="noopener">How to Learn from Others: Transfer Machine Learning with Additive Regression Models to Improve Sales Forecasting</a><strong>good new approach</strong></p>
+<ul>
+<li>Robin Hirt, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://www.medrxiv.org/content/medrxiv/early/2020/05/22/2020.05.20.20103200.full.pdf" target="_blank" rel="noopener">The Hybrid Forecasting Method SVR-ESAR for Covid-19</a></p>
+<ul>
+<li>Juan Frausto Solis, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9094173" target="_blank" rel="noopener">Forecasting the Short-Term Metro Ridership With Seasonal and Trend Decomposition Using Loess and LSTM Neural Networks</a></p>
+<ul>
+<li>DEWANG CHEN, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2005.10111.pdf" target="_blank" rel="noopener">The Effectiveness of Discretization in Forecasting: An Empirical Study on Neural Time Series Models</a></p>
+<ul>
+<li>Stephan Rabanser, et al.</li>
+<li><code>AWS AI Labs</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2005.08067.pdf" target="_blank" rel="noopener">FORECASTING WITH SKTIME: DESIGNING SKTIME’S NEW FORECASTING API AND APPLYING IT TO REPLICATE AND EXTEND THE M4 STUDY</a></p>
+<ul>
+<li>Markus Löning and Franz J. Király.</li>
+<li>[<a href="https://github.com/sktime/sktime-dl" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1909.04293.pdf" target="_blank" rel="noopener">LSTM-MSNet: Leveraging Forecasts on Sets of Related Time Series with Multiple Seasonal Patterns</a></p>
+<ul>
+<li>Kasun Bandara, et al.</li>
+<li>[<a href="https://github.com/kasungayan/LSTMMSNet" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2005.06978.pdf" target="_blank" rel="noopener">A NETWORK-BASED TRANSFER LEARNING APPROACH TO IMPROVE SALES FORECASTING OF NEW PRODUCTS</a></p>
+<ul>
+<li>Karb, Tristan, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://dl.acm.org/doi/10.1145/3357384.3358132" target="_blank" rel="noopener">DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting</a> <strong>Good new approach</strong></p>
+<ul>
+<li>Siteng Huang, et al.</li>
+<li>[<a href="https://github.com/bighuang624/DSANet" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://fruct.org/publications/fruct26/files/Moro.pdf" target="_blank" rel="noopener">An Approach for Complex Event Streams Processing and Forecasting</a></p>
+<ul>
+<li>Viktor Morozov, Mikhail Petrovskiy.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2005.03297.pdf" target="_blank" rel="noopener">Knowledge Enhanced Neural Fashion Trend Forecasting</a></p>
+<ul>
+<li>Yunshan Ma, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://link.springer.com/chapter/10.1007/978-3-030-47358-7_30" target="_blank" rel="noopener">Augmented Out-of-Sample Comparison Method for Time Series Forecasting Techniques</a></p>
+<ul>
+<li>Igor Ilic, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/abstract/document/9081393" target="_blank" rel="noopener">Enhancing High Frequency Technical Indicators Forecasting Using Shrinking Deep Neural Networks</a> <code>ICIM 2020</code></p>
+<ul>
+<li>Xiaoyu Tan, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2004.13408.pdf" target="_blank" rel="noopener">Time Series Forecasting With Deep Learning: A Survey</a> <strong>Good summary</strong></p>
+<ul>
+<li>Bryan Lim and Stefan Zohren</li>
+<li>Survey</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2004.10240.pdf" target="_blank" rel="noopener">Neural forecasting: Introduction and literature overview</a></p>
+<ul>
+<li>Konstantinos Benidis, et al.</li>
+<li>Not is a overview.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2004.09760.pdf" target="_blank" rel="noopener">Take a NAP: Non-Autoregressive Prediction for Pedestrian Trajectories</a></p>
+<ul>
+<li>Hao Xue, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2004.08492.pdf" target="_blank" rel="noopener">Orbit: Probabilistic Forecast with Exponential Smoothing</a></p>
+<ul>
+<li>Edwin Ng, et a.</li>
+<li>Code is available upon request.</li>
+</ul>
+</li>
+<li><p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0169207020300224" target="_blank" rel="noopener">Daily retail demand forecasting using machine learning with emphasis on calendric special days</a></p>
+<ul>
+<li>Jakob Huber and Heiner Stuckenschmidt.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2004.03398.pdf" target="_blank" rel="noopener">FORECASTING IN MULTIVARIATE IRREGULARLY SAMPLED TIME SERIES WITH MISSING VALUES</a></p>
+<ul>
+<li>Shivam Srivastava, et al.</li>
+<li>Code not yet.</li>
+<li><strong>IBM Almaden Research Center</strong>.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2001.10098.pdf" target="_blank" rel="noopener">Multi-label Prediction in Time Series Data using Deep Neural Networks</a></p>
+<ul>
+<li>Wenyu Zhang, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2004.02441.pdf" target="_blank" rel="noopener">TraDE: Transformers for Density Estimation</a></p>
+<ul>
+<li>Rasool Fakoor, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2004.01498.pdf" target="_blank" rel="noopener">Deep Probabilistic Modelling of Price Movements for High-Frequency Trading</a></p>
+<ul>
+<li>Ye-Sheen Lim and Denise Gorse.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2003.14162.pdf" target="_blank" rel="noopener">Deep State Space Models for Nonlinear System Identification</a></p>
+<ul>
+<li>Daniel Gedon, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2003.12162.pdf" target="_blank" rel="noopener">Zero-shot and few-shot time series forecasting with ordinal regression recurrent neural networks</a></p>
+<ul>
+<li>Bernardo Perez Orozco and  Stephen J. Roberts.</li>
+<li>[<a href="https://github.com/bperezorozco/ordinal_tsf" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2003.12194.pdf" target="_blank" rel="noopener">Financial Time Series Representation Learning</a></p>
+<ul>
+<li>Philippe Chatigny, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2003.10551.pdf" target="_blank" rel="noopener">G-Net: A Deep Learning Approach to G-computation for Counterfactual Outcome Prediction Under Dynamic Treatment Regimes</a></p>
+<ul>
+<li>Rui Li, et al.</li>
+<li><ul>
+<li><code>IBM research and MIT</code></li>
+</ul>
+</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2003.09779.pdf" target="_blank" rel="noopener">Deep Markov Spatio-Temporal Factorization</a></p>
+<ul>
+<li>Amirreza Farnoosh, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/ecai20hr.pdf" target="_blank" rel="noopener">Harmonic Recurrent Process for Time Series Forecasting</a></p>
+<ul>
+<li>Shao-Qun Zhang and Zhi-Hua Zhou.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://ssc.io/pdf/modin711s.pdf" target="_blank" rel="noopener">Elastic Machine Learning Algorithms in Amazon SageMaker</a></p>
+<ul>
+<li>Edo Liberty, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2002.12478.pdf" target="_blank" rel="noopener">Time Series Data Augmentation for Deep Learning: A Survey</a></p>
+<ul>
+<li>Qingsong Wen, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2002.12135.pdf" target="_blank" rel="noopener">Block Hankel Tensor ARIMA for Multiple Short Time Series Forecasting</a><code>AAAI 2020</code><strong>meta-learning</strong></p>
+<ul>
+<li>QIQUAN SHI, et al.</li>
+<li>[<a href="https://github.com/huawei-noah/BHT-ARIMA" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://www.researchgate.net/publication/339362837_Learnings_from_Kaggle' target=" _blank"="" rel="noopener" s_forecasting_competitions"="">Learnings from Kaggle’s Forecasting Competitions</a></p>
+<ul>
+<li>Casper Solheim Bojer, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/abstract/document/8999262" target="_blank" rel="noopener">An Industry Case of Large-Scale Demand Forecasting of Hierarchical Components</a></p>
+<ul>
+<li>Rodrigo Rivera-Castro, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2002.06103.pdf" target="_blank" rel="noopener">Multi-variate Probabilistic Time Series Forecasting via Conditioned Normalizing Flows</a></p>
+<ul>
+<li>Kashif Rasul, et al.</li>
+<li>[<a href="https://github.com/zalandoresearch/pytorch-ts" target="_blank" rel="noopener">Code</a>].</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2002.04155.pdf" target="_blank" rel="noopener">ForecastNet: A Time-Variant Deep Feed-Forward Neural Network Architecture for Multi-Step-Ahead Time-Series Forecasting</a></p>
+<ul>
+<li>Joel Janek Dabrowski, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://pdfs.semanticscholar.org/810b/dfa0f63f03473be79556b90dc79a88a1f769.pdf" target="_blank" rel="noopener">Anomaly detection for Cybersecurity: time series forecasting and deep learning</a><code>Good review about forecasting</code></p>
+<ul>
+<li>Giordano Colò.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://krvarshney.github.io/pubs/BhattacharjyaSGMVS_aaai2020.pdf" target="_blank" rel="noopener">Event-Driven Continuous Time Bayesian Networks</a></p>
+<ul>
+<li>Debarun Bhattacharjya, et al.</li>
+<li><code>Research AI, IBM</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1911.10273.pdf" target="_blank" rel="noopener">Joint Modeling of Local and Global Temporal Dynamics for Multivariate Time Series Forecasting with Missing Values</a><code>AAAI 2020</code></p>
+<ul>
+<li>Xianfeng Tang, et al.</li>
+<li><code>IBM Research, NY</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/abstract/document/8964133" target="_blank" rel="noopener">Topology-Based Clusterwise Regression for User Segmentation and Demand Forecasting</a></p>
+<ul>
+<li>Rodrigo Rivera-Castro, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://www.sciencedirect.com/science/article/abs/pii/S2210650219301270" target="_blank" rel="noopener">Evolutionary LSTM-FCN networks for pattern classification in industrial processes</a></p>
+<ul>
+<li>Patxi Ortego, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://rd.springer.com/chapter/10.1007/978-3-030-37309-2_10" target="_blank" rel="noopener">Forecasting Multivariate Time-Series Data Using LSTM and Mini-Batches</a></p>
+<ul>
+<li>Athar Khodabakhsh, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://faculty.ist.psu.edu/xzz89/publications/AAAI20.pdf" target="_blank" rel="noopener">Tensorized LSTM with Adaptive Shared Memory for Learning Trends in Multivariate Time Series</a><code>AAAI 2020</code></p>
+<ul>
+<li>Dongkuan Xu, et al.</li>
+<li>[<a href="https://github.com/DerronXu/DeepTrends/tree/master" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><strong><a href="https://arxiv.org/pdf/2001.04050.pdf" target="_blank" rel="noopener">RELATIONAL STATE-SPACE MODEL FOR STOCHASTIC MULTI-OBJECT SYSTEMS</a></strong><code>ICLR 2020</code></p>
+<ul>
+<li>Fan Yang, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2001.04601.pdf" target="_blank" rel="noopener">For2For: Learning to forecast from forecasts</a></p>
+<ul>
+<li>Zhao, Shi, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1909.08181.pdf" target="_blank" rel="noopener">Self-boosted Time-series Forecasting with Multi-task and Multi-view Learning</a> <code>AAAI 2020</code></p>
+<ul>
+<li>Long H. Nguyen, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+</ul>
+<h3 id="2019"><a href="#2019" class="headerlink" title="2019"></a>2019</h3><ul>
+<li><p><a href="https://dl.acm.org/doi/pdf/10.1145/3292500.3332289" target="_blank" rel="noopener">Forecasting Big Time Series: Theory and Practice</a><code>KDD 2019</code> <strong>Relevant tutorial</strong></p>
+<ul>
+<li>Christos Faloutsos, et al.</li>
+<li>[<a href="https://lovvge.github.io/Forecasting-Tutorial-KDD-2019/" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="http://urban-computing.com/pdf/kdd19-BinWang.pdf" target="_blank" rel="noopener">Deep Uncertainty Quantification: A Machine Learning Approach for Weather Forecasting</a></p>
+<ul>
+<li>Bin Wang, et al.</li>
+<li>[<a href="https://github.com/BruceBinBoxing/Deep_Learning_Weather_Forecasting" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://www.researchgate.net/publication/334556784_A_hybrid_method_of_exponential_smoothing_and_recurrent_neural_networks_for_time_series_forecasting" target="_blank" rel="noopener">A hybrid method of exponential smoothing and recurrent neural networks for time series forecasting</a></p>
+<ul>
+<li>Slawek Smyl</li>
+<li><code>Winning submission of the M4 forecasting competition</code></li>
+<li>[<a href="https://github.com/Mcompetitions/M4-methods/tree/slaweks_ES-RNN/118%20-%20slaweks17" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1905.03806.pdf" target="_blank" rel="noopener">Think Globally, Act Locally: A Deep Neural Network Approach to High-Dimensional Time Series Forecasting</a><code>NeurIPS 2019</code></p>
+<ul>
+<li>Rajat Sen, et al.</li>
+<li><code>Amazon</code></li>
+<li>[<a href="https://github.com/rajatsen91/deepglo" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1905.03028" target="_blank" rel="noopener">Deep Landscape Forecasting for Real-time Bidding Advertising</a> <code>KDD 2019</code></p>
+<ul>
+<li>Kan Ren, et al.</li>
+<li>[<a href="https://github.com/rk2900/DLF" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1702.03584.pdf" target="_blank" rel="noopener">Similarity Preserving Representation Learning for Time Series Clustering</a></p>
+<ul>
+<li>Qi Lei, et al.</li>
+<li><code>IBM research</code></li>
+<li>[<a href="https://github.com/cecilialeiqi/SPIRAL" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://dl.acm.org/doi/abs/10.1145/3357384.3358132" target="_blank" rel="noopener">DSANet: Dual Self-Attention Network for Multivariate Time Series Forecasting</a></p>
+<ul>
+<li>Siteng Huang, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1904.04912.pdf" target="_blank" rel="noopener">Enhancing Time Series Momentum Strategies Using Deep Neural Networks</a></p>
+<ul>
+<li>Bryan Lim, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://hal.inria.fr/hal-02422148/document" target="_blank" rel="noopener">DYNAMIC TIME LAG REGRESSION: PREDICTING WHAT &amp; WHEN</a></p>
+<ul>
+<li>Mandar Chandorkar, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://papers.nips.cc/paper/8789-time-series-generative-adversarial-networks.pdf" target="_blank" rel="noopener">Time-series Generative Adversarial Networks</a><code>NeurIPS 2019</code></p>
+<ul>
+<li>Jinsung Yoon. et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1912.09363.pdf" target="_blank" rel="noopener">Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting</a></p>
+<ul>
+<li>Bryan Lim, et al.</li>
+<li><code>Google Research</code></li>
+<li>[<a href="https://github.com/google-research/google-research/tree/master/tft" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://openreview.net/pdf?id=H1xXYy3VKr" target="_blank" rel="noopener">Deep Amortized Variational Inference for Multivariate Time Series Imputation with Latent Gaussian Process Models</a></p>
+<ul>
+<li>Vincent Fortuin, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1912.01762.pdf" target="_blank" rel="noopener">Deep Physiological State Space Model for Clinical Forecasting</a></p>
+<ul>
+<li>Yuan Xue, et al.</li>
+<li>not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1911.12436" target="_blank" rel="noopener">AR-Net: A simple Auto-Regressive Neural Network for time-series</a></p>
+<ul>
+<li>Oskar Triebe, et al.</li>
+<li><code>Facebook Research</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://ecole-itn.eu/wp-content/uploads/2019/11/LMID_Sneha_finalversion.pdf" target="_blank" rel="noopener">Learning Time-series Data of Industrial Design Optimization using Recurrent Neural Networks</a></p>
+<ul>
+<li>Sneha Saha, et al.</li>
+<li><code>Honda Research Institute Europe GmbH</code></li>
+<li>Code not yet.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://arxiv.org/abs/1812.01767" target="_blank" rel="noopener">RobustSTL: A Robust Seasonal-Trend Decomposition Algorithm for Long Time Series</a></p>
+<ul>
+<li>Qingsong Wen, et al.</li>
+<li>[<a href="https://github.com/LeeDoYup/RobustSTL" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1911.05035.pdf" target="_blank" rel="noopener">Constructing Gradient Controllable Recurrent Neural Networks Using Hamiltonian Dynamics</a></p>
+<ul>
+<li>Konstantin Rusch, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://openreview.net/pdf?id=rygjcsR9Y7" target="_blank" rel="noopener">SOM-VAE: Interpretable Discrete Representation Learning on Time Series</a><code>ICLR 2019</code></p>
+<ul>
+<li>Vincent Fortuin, et al.</li>
+<li>[<a href="https://github.com/ratschlab/SOM-VAE" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1901.10738" target="_blank" rel="noopener">Unsupervised Scalable Representation Learning for Multivariate Time Series</a><code>NeurIPS 2019</code>  <a href="https://nips.cc/Conferences/2019/Schedule?showParentSession=15627" target="_blank" rel="noopener">In Applications – Time Series Analysis </a></p>
+<ul>
+<li>Jean-Yves Franceschi, et al.</li>
+<li>[<a href="https://github.com/White-Link/UnsupervisedScalableRepresentationLearningTimeSeries" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1905.13570v1.pdf" target="_blank" rel="noopener">Factorized Inference in Deep Markov Models for Incomplete Multimodal Time Series</a></p>
+<ul>
+<li>Zhi-Xuan Tan, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1910.09620.pdf" target="_blank" rel="noopener">You May Not Need Order in Time Series Forecasting</a></p>
+<ul>
+<li>Yunkai Zhang, et al.</li>
+<li>Code not yet</li>
+</ul>
+<p align="center">
+<img src="https://github.com/Alro10/deep-learning-time-series/blob/master/YMN_order.png" alt="alt text" width="80%" height="60%">
+</p>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1909.09020.pdf" target="_blank" rel="noopener">Shape and Time Distortion Loss for Training Deep Time Series Forecasting Models</a><code>NeurIPS2019</code></p>
+<ul>
+<li>Vincent Le Guen and Nicolas Thome.</li>
+<li>[<a href="https://github.com/vincent-leguen/STDL" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1910.07927.pdf" target="_blank" rel="noopener">Dynamic Local Regret for Non-convex Online Forecasting</a><code>NeurIPS 2019</code></p>
+<ul>
+<li>Sergul Aydore, et al.</li>
+<li>[<a href="https://github.com/Timbasa/Dynamic_Local_Regret_for_Non-convex_Online_Forecasting_NeurIPS2019" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1910.06366.pdf" target="_blank" rel="noopener">Bayesian Temporal Factorization for Multidimensional Time Series Prediction</a></p>
+<ul>
+<li>Xinyu Chen, and Lijun Sun</li>
+<li>[<a href="https://github.com/xinychen/transdim" target="_blank" rel="noopener">Code and data</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1910.03906.pdf" target="_blank" rel="noopener">Probabilistic sequential matrix factorization</a></p>
+<ul>
+<li>Ömer Deniz Akyildiz, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1910.03818.pdf" target="_blank" rel="noopener">Sequential VAE-LSTM for Anomaly Detection on Time Series</a></p>
+<ul>
+<li>Run-Qing Chen, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1910.03002.pdf" target="_blank" rel="noopener">High-Dimensional Multivariate Forecasting with Low-Rank Gaussian Copula Processes</a><code>NeurIPS 2019</code></p>
+<ul>
+<li>David Salinas, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1901.08096.pdf" target="_blank" rel="noopener">Recurrent Neural Filters: Learning Independent Bayesian Filtering Steps for Time Series Prediction</a></p>
+<ul>
+<li>Bryan Lim, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://ieeexplore.ieee.org/abstract/document/8855402" target="_blank" rel="noopener">LHCnn: A Novel Efficient Multivariate Time Series Prediction Framework Utilizing Convolutional Neural Networks</a></p>
+<ul>
+<li>Chengxi Liu, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1909.07872.pdf" target="_blank" rel="noopener">SKTIME: A UNIFIED INTERFACE FOR MACHINE LEARNING WITH TIME SERIE</a></p>
+<ul>
+<li>[<a href="https://github.com/alan-turing-institute/sktime" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong><a href="https://arxiv.org/pdf/1909.00590.pdf" target="_blank" rel="noopener">Recurrent Neural Networks for Time Series Forecasting: Current Status and Future Directions</a></strong></p>
+<ul>
+<li>[<a href="https://github.com/HansikaPH/time-series-forecasting" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://www.researchgate.net/profile/Antonio_Parmezan/publication/330742498_Evaluation_of_statistical_and_machine_learning_models_for_time_series_prediction_Identifying_the_state-of-the-art_and_the_best_conditions_for_the_use_of_each_model/links/5c558145a6fdccd6b5dc3e2e/Evaluation-of-statistical-and-machine-learning-models-for-time-series-prediction-Identifying-the-state-of-the-art-and-the-best-conditions-for-the-use-of-each-model.pdf" target="_blank" rel="noopener">Evaluation of statistical and machine learning models for time series prediction: Identifying the state-of-the-art and the best conditions for the use of each model</a></p>
+<ul>
+<li>Antonio Rafael Sabino Parmezan, Vinicius M. A. Souza and Gustavo E. A. P. A. Batista. USP</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.ijcai.org/proceedings/2019/0932.pdf" target="_blank" rel="noopener">Explainable Deep Neural Networks for Multivariate Time Series Predictions</a> <code>IJCAI 2019</code></p>
+<ul>
+<li>Roy Assaf and Anika Schumann.</li>
+<li><code>IBM Research, Zurich</code></li>
+<li>Code not yet</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.ijcai.org/proceedings/2019/0378.pdf" target="_blank" rel="noopener">Outlier Detection for Time Series with Recurrent Autoencoder Ensembles</a> <code>IJCAI 2019</code></p>
+<ul>
+<li>[<a href="https://github.com/tungk/OED" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://www.ijcai.org/proceedings/2019/0402.pdf" target="_blank" rel="noopener">Learning Interpretable Deep State Space Model for Probabilistic Time Series Forecasting</a> <code>IJCAI 2019</code></p>
+<ul>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1905.12417.pdf" target="_blank" rel="noopener">Deep Factors for Forecasting</a> <code>ICML 2019</code></p>
+<ul>
+<li>Yuyang Wang, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="http://proceedings.mlr.press/v89/gasthaus19a/gasthaus19a.pdf" target="_blank" rel="noopener">Probabilistic Forecasting with Spline Quantile Function RNNs</a></p>
+<ul>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1809.04356" target="_blank" rel="noopener">Deep learning for time series classification: a review</a></p>
+<ul>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1801.04503" target="_blank" rel="noopener">Multivariate LSTM-FCNs for Time Series Classification</a></p>
+<ul>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0169207019301529" target="_blank" rel="noopener">Criteria for classifying forecasting methods</a></p>
+<ul>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1906.05264" target="_blank" rel="noopener">GluonTS: Probabilistic Time Series Models in Python</a></p>
+<ul>
+<li>[<a href="https://gluon-ts.mxnet.io" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1704.04110" target="_blank" rel="noopener">DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks</a></p>
+<ul>
+<li>David Salinas, et al.</li>
+<li>Code not yet</li>
+</ul>
+</li>
+</ul>
+<h3 id="2018"><a href="#2018" class="headerlink" title="2018"></a>2018</h3><ul>
+<li><p><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0194889" target="_blank" rel="noopener">Statistical and Machine Learning forecasting methods: Concerns and ways forward</a></p>
+<ul>
+<li>Spyros Makridakis, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/16325/16790" target="_blank" rel="noopener">Attend and Diagnose: Clinical Time Series Analysis Using Attention Models</a> <code>AAAI 2018</code></p>
+<ul>
+<li>Huan Song, Deepta Rajan, et al.</li>
+<li>not yet.</li>
+</ul>
+</li>
+<li><p><a href="http://papers.nips.cc/paper/7462-precision-and-recall-for-time-series" target="_blank" rel="noopener">Precision and Recall for Time Series</a> <code>NeurIPS2018</code></p>
+<ul>
+<li>Nesime Tatbul, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://papers.nips.cc/paper/8004-deep-state-space-models-for-time-series-forecasting.pdf" target="_blank" rel="noopener">Deep State Space Models for Time Series Forecasting</a> <code>NeurIPS2018</code></p>
+<ul>
+<li>Code not yet</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/abs/1812.00098" target="_blank" rel="noopener">Deep Factors with Gaussian Processes for Forecasting</a></p>
+<ul>
+<li><code>Third workshop on Bayesian Deep Learning (NeurIPS 2018)</code></li>
+<li>[<a href="https://aws.amazon.com/blogs/machine-learning/now-available-in-amazon-sagemaker-deepar-algorithm-for-more-accurate-time-series-forecasting/" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1707.01926.pdf" target="_blank" rel="noopener">DIFFUSION CONVOLUTIONAL RECURRENT NEURAL NETWORK: DATA-DRIVEN TRAFFIC FORECASTING</a><code>ICLR 2018</code></p>
+<ul>
+<li>Yaguang Li, et al.</li>
+<li>[<a href="https://github.com/liyaguang/DCRNN" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1802.01059.pdf" target="_blank" rel="noopener">DEEP TEMPORAL CLUSTERING: FULLY UNSUPERVISED LEARNING OF TIME-DOMAIN FEATURES</a></p>
+<ul>
+<li>Naveen Sai Madiraju, et al.</li>
+<li>[<a href="https://github.com/FlorentF9/DeepTemporalClustering" target="_blank" rel="noopener">Code-unofficial implementation </a>]</li>
+</ul>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1703.07015.pdf" target="_blank" rel="noopener">Modeling Long- and Short-Term Temporal Patterns with Deep Neural Networks</a></p>
+<ul>
+<li>Guokun Lai, Wei-Cheng Chang, Yiming Yang, Hanxiao Liu</li>
+<li>[<a href="https://github.com/laiguokun/LSTNet" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="http://papers.nips.cc/paper/7977-forecasting-treatment-responses-over-time-using-recurrent-marginal-structural-networks.pdf" target="_blank" rel="noopener">Forecasting Treatment Responses Over Time Using Recurrent Marginal Structural Networks</a> <code>NeurIPS 2018</code></p>
+<ul>
+<li>Bryan Lim. et al.</li>
+<li><a href="https://github.com/sjblim/rmsn_nips_2018" target="_blank" rel="noopener">Code</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="2017"><a href="#2017" class="headerlink" title="2017"></a>2017</h3><ul>
+<li><p><a href="https://www.econstor.eu/bitstream/10419/157808/1/886576210.pdf" target="_blank" rel="noopener">Deep learning with long short-term memory networks for financial market predictions</a></p>
+<ul>
+<li>Fischer, Thomas and Krauss, Christopher.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://papers.nips.cc/paper/7150-discriminative-state-space-models.pdf" target="_blank" rel="noopener">Discriminative State-Space Models</a><code>NIPS 2017</code></p>
+<ul>
+<li>Vitaly Kuznetsov and Mehryar Mohri.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2016"><a href="#2016" class="headerlink" title="2016"></a>2016</h3><ul>
+<li><p><a href="https://www.researchgate.net/publication/309385800_Data_Preprocessing_and_Augmentation_for_Multiple_Short_Time_Series_Forecasting_with_Recurrent_Neural_Networks" target="_blank" rel="noopener">Data Preprocessing and Augmentation for Multiple Short Time Series Forecasting with Recurrent Neural Networks</a></p>
+<ul>
+<li>Slawek Smyl and Karthik Kuber</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+<li><p><a href="https://papers.nips.cc/paper/6160-temporal-regularized-matrix-factorization-for-high-dimensional-time-series-prediction" target="_blank" rel="noopener">Temporal Regularized Matrix Factorization for High-dimensional Time Series Prediction</a><code>NIPS 2016</code></p>
+<ul>
+<li>[<a href="https://github.com/rofuyu/exp-trmf-nips16" target="_blank" rel="noopener">Code</a>]</li>
+</ul>
+</li>
+<li><p><a href="http://proceedings.mlr.press/v49/kuznetsov16.pdf" target="_blank" rel="noopener">Time Series Prediction and Online Learning</a><code>JMLR 2016</code></p>
+<ul>
+<li><p>Vitaly Kuznetsov and Mehryar Mohri.</p>
+</li>
+<li><p>Code not yet.</p>
+</li>
+<li><p><a href="https://ideas.repec.org/p/zbw/iwqwdp/032016.html" target="_blank" rel="noopener">Deep neural networks, gradient-boosted trees, random forests: Statistical arbitrage on the S&amp;P 500</a></p>
+<ul>
+<li>Krauss, Christopher, et al.</li>
+<li>Code not yet.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Comparative-Classical-methods-vs-Deep-Learning-methods"><a href="#Comparative-Classical-methods-vs-Deep-Learning-methods" class="headerlink" title="Comparative: Classical methods vs Deep Learning methods"></a>Comparative: Classical methods vs Deep Learning methods</h3><ul>
+<li><p><a href="https://arxiv.org/pdf/1803.06386.pdf" target="_blank" rel="noopener">Forecasting economic and financial time series: ARIMA VS. LSTM</a></p>
+</li>
+<li><p><a href="https://pdfs.semanticscholar.org/e58c/7343ea25d05f6d859d66d6bb7fb91ecf9c2f.pdf" target="_blank" rel="noopener">A comparative study between LSTM and ARIMA for sales forecasting in retail</a></p>
+</li>
+<li><p><a href="https://towardsdatascience.com/arima-sarima-vs-lstm-with-ensemble-learning-insights-for-time-series-data-509a5d87f20a" target="_blank" rel="noopener">ARIMA/SARIMA vs LSTM with Ensemble learning Insights for Time Series Data</a></p>
+</li>
+</ul>
+<h2 id="Conferences"><a href="#Conferences" class="headerlink" title="Conferences"></a>Conferences</h2><ul>
+<li><p>Machine learning</p>
+<ul>
+<li><a href="https://nips.cc/" target="_blank" rel="noopener">NeurIPS</a></li>
+<li><a href="https://icml.cc/" target="_blank" rel="noopener">ICML</a></li>
+<li><a href="https://iclr.cc/" target="_blank" rel="noopener">ICLR</a></li>
+</ul>
+</li>
+<li><p>Artificial intelligence</p>
+<ul>
+<li><a href="https://www.aaai.org/" target="_blank" rel="noopener">AAAI</a></li>
+<li><a href="https://www.aistats.org/" target="_blank" rel="noopener">AISTATS</a></li>
+<li><a href="https://e-nns.org/icann2019/" target="_blank" rel="noopener">ICANN</a>   </li>
+<li><a href="https://www.ijcai.org/" target="_blank" rel="noopener">IJCAI</a></li>
+<li><a href="http://www.auai.org/" target="_blank" rel="noopener">UAI</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="Competitions"><a href="#Competitions" class="headerlink" title="Competitions"></a>Competitions</h2><ul>
+<li><a href="https://mofc.unic.ac.cy/m5-competition/" target="_blank" rel="noopener">M5 Competition</a></li>
+<li><a href="https://github.com/Mcompetitions/M4-methods" target="_blank" rel="noopener">M4 Competition</a></li>
+</ul>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><ul>
+<li><a href="https://github.com/Alro10/deep-learning-time-series/tree/master/notebooks" target="_blank" rel="noopener">Notebooks</a></li>
+<li><a href="">Code</a></li>
+</ul>
+<h2 id="Theory-Resource"><a href="#Theory-Resource" class="headerlink" title="Theory-Resource"></a>Theory-Resource</h2><ul>
+<li><p><a href="https://github.com/microsoft/forecasting" target="_blank" rel="noopener">Time Series Forecasting Best Practices &amp; Examples from Microsoft</a></p>
+</li>
+<li><p><a href="https://towardsdatascience.com/attention-for-time-series-classification-and-forecasting-261723e0006d" target="_blank" rel="noopener">Attention-for-time-series-classification-and-forecasting</a></p>
+</li>
+<li><p><a href="https://towardsdatascience.com/deep-learning-for-high-dimensional-time-series-7a72b033a7e0" target="_blank" rel="noopener">Deep learning for high dimensional time series-blog</a></p>
+</li>
+<li><p><a href="https://deeplearning.ai/ai-notes/optimization/" target="_blank" rel="noopener">Deep Learning AI-Optimization</a></p>
+</li>
+<li><p><a href="https://towardsdatascience.com/back-to-basics-deriving-back-propagation-on-simple-rnn-lstm-feat-aidan-gomez-c7f286ba973d" target="_blank" rel="noopener">Backpropagation for LSTM</a></p>
+</li>
+<li><p><a href="https://blog.usejournal.com/stock-market-prediction-by-recurrent-neural-network-on-lstm-model-56de700bff68" target="_blank" rel="noopener">Stock Market Prediction by Recurrent Neural Network on LSTM Model</a></p>
+</li>
+<li><p><a href="https://arxiv.org/pdf/1910.05245.pdf" target="_blank" rel="noopener">Decoupling Hierarchical Recurrent Neural Networks With Locally Computable Losses</a></p>
+</li>
+<li><p><a href="https://towardsdatascience.com/time-series-analysis-with-deep-learning-simplified-5c444315d773" target="_blank" rel="noopener">Time Series Analysis with Deep Learning : Simplified</a></p>
+</li>
+<li><p><a href="https://towardsdatascience.com/machine-learning-techniques-applied-to-stock-price-prediction-6c1994da8001" target="_blank" rel="noopener">ML techniques applied to stock prices</a></p>
+</li>
+<li><p><a href="https://github.com/robjhyndman/ETC3550Slides" target="_blank" rel="noopener">Forecasting: Principles and Practice: Slides</a><strong>Good material</strong></p>
+</li>
+</ul>
+<h2 id="Code-Resource"><a href="#Code-Resource" class="headerlink" title="Code-Resource"></a>Code-Resource</h2><ul>
+<li><p><a href="https://github.com/EvilPsyCHo/Deep-Time-Series-Prediction" target="_blank" rel="noopener">DeepSeries: Deep Learning Models for time series prediction.</a></p>
+</li>
+<li><p><a href="https://arxiv.org/pdf/2005.10361.pdf" target="_blank" rel="noopener">varstan: An R package for Bayesian analysis of structured time series models with Stan</a></p>
+</li>
+<li><p><a href="https://github.com/firmai/tsgan" target="_blank" rel="noopener">Time-series Generative Adversarial Networks: tsgan</a></p>
+</li>
+<li><p><a href="https://github.com/MSRDL/Deep4Cast" target="_blank" rel="noopener">Deep4cast: Forecasting for Decision Making under Uncertainty</a></p>
+</li>
+<li><p><a href="https://github.com/jxx123/fireTS" target="_blank" rel="noopener">fireTS: sklean style package for multi-variate time-series prediction.</a></p>
+</li>
+<li><p><a href="https://github.com/epiforecasts/EpiSoon" target="_blank" rel="noopener">EpiSoon: Forecasting the effective reproduction number over short timescales</a></p>
+</li>
+<li><p><a href="https://github.com/pyaf/load_forecasting" target="_blank" rel="noopener">Electric Load Forecasting</a>: Load forecasting on Delhi area electric power load using ARIMA, RNN, LSTM and GRU models.</p>
+</li>
+<li><p><a href="https://github.com/rstudio-conf-2020/time-series-forecasting" target="_blank" rel="noopener">Time Series and Forecasting in R</a></p>
+</li>
+<li><p><a href="https://github.com/timeseriesAI/timeseriesAI" target="_blank" rel="noopener">TimeseriesAI</a>: Practical Deep Learning for Time Series / Sequential Data using fastai/ Pytorch.</p>
+</li>
+<li><p><a href="https://github.com/timescale/timescaledb" target="_blank" rel="noopener">TimescaleDB</a>: An open-source time-series SQL database optimized for fast ingest and complex queries. Packaged as a PostgreSQL extension.</p>
+</li>
+<li><p><a href="https://github.com/RamiKrispin/TSstudio" target="_blank" rel="noopener">TSstudio: Tools for time series analysis and forecasting </a></p>
+</li>
+<li><p><a href="https://github.com/facebook/prophet" target="_blank" rel="noopener">Prophet: Automatic Forecasting Procedure</a></p>
+</li>
+<li><p><a href="https://github.com/johannfaouzi/pyts" target="_blank" rel="noopener">pyts: a Python package for time series classification</a></p>
+</li>
+<li><p><a href="https://github.com/wassname/attentive-neural-processes" target="_blank" rel="noopener">Using attentive neural processes for forecasting power usage</a></p>
+</li>
+<li><p><a href="https://robjhyndman.com/hyndsight/fable2/" target="_blank" rel="noopener">Non-Gaussian forecasting using fable - R</a></p>
+</li>
+<li><p><a href="https://github.com/alan-turing-institute/sktime" target="_blank" rel="noopener">SKTIME</a></p>
+</li>
+<li><p><a href="https://paperswithcode.com/task/multivariate-time-series-forecasting" target="_blank" rel="noopener">Papers with code - Multivariate time series forecasting</a></p>
+</li>
+<li><p><a href="https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html" target="_blank" rel="noopener">DeepAR by Amazon</a></p>
+</li>
+<li><p><a href="https://aws.amazon.com/blogs/machine-learning/now-available-in-amazon-sagemaker-deepar-algorithm-for-more-accurate-time-series-forecasting/" target="_blank" rel="noopener">DFGP by Amazon</a></p>
+</li>
+<li><p><a href="https://www.kaggle.com/c/demand-forecasting-kernels-only" target="_blank" rel="noopener">https://www.kaggle.com/c/demand-forecasting-kernels-only</a></p>
+</li>
+<li><p><a href="https://www.kaggle.com/c/favorita-grocery-sales-forecasting" target="_blank" rel="noopener">https://www.kaggle.com/c/favorita-grocery-sales-forecasting</a></p>
+</li>
+<li><p><a href="https://www.kaggle.com/c/grupo-bimbo-inventory-demand" target="_blank" rel="noopener">https://www.kaggle.com/c/grupo-bimbo-inventory-demand</a></p>
+</li>
+<li><p><a href="https://www.kaggle.com/c/recruit-restaurant-visitor-forecasting" target="_blank" rel="noopener">https://www.kaggle.com/c/recruit-restaurant-visitor-forecasting</a></p>
+</li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0169207019301098" target="_blank" rel="noopener">Predicting/hypothesizing the findings of the M4 Competition</a></p>
+</li>
+</ul>
+<h2 id="Datasets"><a href="#Datasets" class="headerlink" title="Datasets"></a>Datasets</h2><ul>
+<li><p><a href="https://github.com/xephonhq/awesome-time-series-database" target="_blank" rel="noopener">A curated list of awesome time series databases</a></p>
+</li>
+<li><p><a href="https://archive.ics.uci.edu/ml/datasets/ElectricityLoadDiagrams20112014" target="_blank" rel="noopener">Electricity dataset from UCI</a></p>
+</li>
+<li><p><a href="https://archive.ics.uci.edu/ml/datasets/PEMS-SF" target="_blank" rel="noopener">Traffic dataset from UCI</a></p>
+</li>
+<li><p><a href="http://archive.ics.uci.edu/ml/datasets/Air+Quality" target="_blank" rel="noopener">Air quality from UCI</a></p>
+</li>
+<li><p><a href="https://github.com/zhiyongc/Seattle-Loop-Data" target="_blank" rel="noopener">Seattle freeway traffic speed</a></p>
+</li>
+<li><p><a href="https://www.kaggle.com/c/web-traffic-time-series-forecasting" target="_blank" rel="noopener">Kaggle-Web Traffic Time Series Forecasting</a></p>
+</li>
+</ul>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Mr.Yang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yangminghong.top/2020/08/07/deep-learning-time-series-master/">http://yangminghong.top/2020/08/07/deep-learning-time-series-master/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Mr.Yang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/deeplearning/">
+                                    <span class="chip bg-color">deeplearning</span>
+                                </a>
+                            
+                                <a href="/tags/time-series-forcasting/">
+                                    <span class="chip bg-color">time series forcasting</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/08/07/deep-learning-time-series-master/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Focus on deep learning and time series forecasting with some resources and code.">
+                        
+                        <span class="card-title">Focus on deep learning and time series forecasting with some resources and code.</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            List of state of the art papers focus on deep learning and resources, code and experiments using deep learning for time series forecasting. Classic methods vs Deep Learning methods, Competitions...
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-08-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%A4%87%E5%BF%98/" class="post-category">
+                                    备忘
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/deeplearning/">
+                        <span class="chip bg-color">deeplearning</span>
+                    </a>
+                    
+                    <a href="/tags/time-series-forcasting/">
+                        <span class="chip bg-color">time series forcasting</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/07/27/xian-zhi-shou-ji-zheng-jiu-ji-hua/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/55.jpg" class="responsive-img" alt="闲置手机拯救计划">
+                        
+                        <span class="card-title">闲置手机拯救计划</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            引言本方案利用了AIDA64和remote panel两个软件，尝试将闲置的废旧手机改装为PC状态监控器，实现旧物再利用。打游戏、跑程序的时候，麻麻再也不用担心我看不见电脑运行状态啦~ (●ˇ∀ˇ●) ~！！！
+声明本教程参考了知乎大佬Pj
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%83%B3%E6%B3%95/" class="post-category">
+                                    想法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8A%A8%E6%89%8B%E6%8D%A3%E8%85%BE/">
+                        <span class="chip bg-color">动手捣腾</span>
+                    </a>
+                    
+                    <a href="/tags/pc%E7%8A%B6%E6%80%81%E7%9B%91%E6%8E%A7/">
+                        <span class="chip bg-color">pc状态监控</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BA%9F%E6%97%A7%E6%89%8B%E6%9C%BA%E6%94%B9%E9%80%A0/">
+                        <span class="chip bg-color">废旧手机改造</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 小杨同学のBlog<br />'
+            + '文章作者: Mr.Yang<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+			<span class="with-love" id="heart"><i class="fa fa-heart" style="color:#ff71a8"></i> </span>
+			
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Mr.Yang
+			
+			<span class="with-love" id="heart"><i class="fa fa-heart" style="color:#ff71a8"></i> </span>
+			</a>
+			
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">49.7k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+			
+			</span><span class="my-face">ღゝ◡╹)ノ♡</span>
+			
+			
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "5";
+                    var startDate = "12";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.beian.miit.gov.cn" target="_blank">渝ICP备20000649号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/ray-yang521" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+
+<i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:525885186@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=525885186" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 525885186" data-position="top" data-delay="50">
+        
+<i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.5'
+        zIndex="-1" count="199"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+	
+	
+	<script type="text/javascript">
+		var OriginTitile = document.title,
+			st;
+		document.addEventListener("visibilitychange", function () {
+			document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+				"(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+					document.title = OriginTitile
+				}, 3e3))
+		})
+	</script>
+	
+	
+	<!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
+        
+            <script src="/js/wenzi.js" type="text/javascript"></script>
+        
+		
+	<!-- 背景樱花飘落特效 洪卫 shw2018 add 2019.09.10 -->
+    
+        <script type="text/javascript">
+		//只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+            }
+        </script>
+    
+	
+	<!-- 天气接口  YMH  2020年6月2日 03:35:23 -->
+	
+	<!-- 天气接口  YMH  2020年6月2日 03:35:23 -->
+<script type="text/javascript">
+  WIDGET = {FID: 'eq6UcRDUIR'}
+</script>
+<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
+
+<script type="text/javascript">
+  //只在桌面版网页启用特效
+  var windowWidth = $(window).width();
+  if (windowWidth > 768) {
+      document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');
+  }
+  </script>
+	
+
+</body>
+
+</html>
