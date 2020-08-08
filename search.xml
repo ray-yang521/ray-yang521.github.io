@@ -20,9 +20,9 @@
       
         <tags>
             
-            <tag> deeplearning </tag>
+            <tag> deep learning </tag>
             
-            <tag> time series forcasting </tag>
+            <tag> time series forecasting </tag>
             
         </tags>
       
@@ -927,16 +927,16 @@
       
       <categories>
           
-          <category> EnvConfig </category>
+          <category> 总结 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> EnvConfig </tag>
-            
             <tag> Windows </tag>
+            
+            <tag> Node.js </tag>
             
         </tags>
       
@@ -954,16 +954,16 @@
       
       <categories>
           
-          <category> EnvConfig </category>
+          <category> 总结 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> EnvConfig </tag>
+            <tag> Hexo </tag>
             
-            <tag> Windows </tag>
+            <tag> matery </tag>
             
         </tags>
       
