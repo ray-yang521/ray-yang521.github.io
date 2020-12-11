@@ -349,8 +349,8 @@
             let pwd = 'e79c58e77d4b41ca8f3bcdabd65417b4c3c35416dc700c7727fb719ba3e0011d';
 
             if (pwd && pwd.length > 0) {
-                if (pwd !== CryptoJS.SHA256(prompt('该相册已加密，请输入密码访问')).toString(CryptoJS.enc.Hex)) {
-                    alert('密码错误，将返回主页！');
+                if (pwd !== CryptoJS.SHA256(prompt('这是博主的私密相册哦~请输入密码查看o(^▽^)o')).toString(CryptoJS.enc.Hex)) {
+                    alert('对不起！密码错误哦！( ▼-▼ )');
                     location.href = '/';
                 }
             }
@@ -392,7 +392,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-	// $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
+	// $('.bg-cover').css('background-image', 'url(/medias/banner/6.jpg)');
 	$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getMinutes() + '.jpg)');
 </script>
 
@@ -400,19 +400,17 @@
     </div>
 </div> -->
 
-<link rel="stylesheet" href="">
 <!-- 该主题自带的lightGallery.js在图片多的时候会很卡，所以弃用，使用了一个我在网上找的baguetteBox，很轻量级，就是功能少了点 -->
+<link rel="stylesheet" href="">
 <script src=""></script> 
 
-<!-- baguetteBox -->
-document.write('<link rel="stylesheet" href="/libs/MyGallery/css/baguetteBox.css">');
-<script type="text/javascript">
-	document.write('<script type="text/javascript" src="/libs/MyGallery/js/baguetteBox.js"><\/script>');
-</script>
+<script type="text/javascript" src="/js/baguetteBox.js"></script>
+<link rel="stylesheet" href="/css/baguetteBox.css">
 
 
 
-<style>    
+
+<style>
     .my-gallery .photo img {
         transition: all 0.6s ease-in-out; 
     }     
@@ -597,6 +595,21 @@ document.write('<link rel="stylesheet" href="/libs/MyGallery/css/baguetteBox.css
                                        
                         <a href="16.jpg" data-caption="♥韩美丽的吃货集锦♥">
                             <img class="mat" src="/medias/loading.svg" data-src="16.jpg" alt="img"+15 >
+                        </a>                   
+                
+                                       
+                        <a href="17.jpg" data-caption="♥韩美丽的吃货集锦♥">
+                            <img class="mat" src="/medias/loading.svg" data-src="17.jpg" alt="img"+16 >
+                        </a>                   
+                
+                                       
+                        <a href="18.jpg" data-caption="♥韩美丽的吃货集锦♥">
+                            <img class="mat" src="/medias/loading.svg" data-src="18.jpg" alt="img"+17 >
+                        </a>                   
+                
+                                       
+                        <a href="19.jpg" data-caption="♥韩美丽的吃货集锦♥">
+                            <img class="mat" src="/medias/loading.svg" data-src="19.jpg" alt="img"+18 >
                         </a>                   
                 
             
