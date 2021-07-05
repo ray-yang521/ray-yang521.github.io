@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>惊喜开启指南</title>
+      <link href="/2021/01/09/surprise/"/>
+      <url>/2021/01/09/surprise/</url>
+      
+        <content type="html"><![CDATA[<h2 id="引言："><a href="#引言：" class="headerlink" title="引言："></a>引言：</h2><p>晓莉大宝贝，这是乖乖为你准备的情人节惊喜指南。首先说明，这不是惊喜，这是打开惊喜的钥匙。至于为什么我要这么做呢？因为我知道宝贝等不到情人节那一天，就忍不住想要打开惊喜。所以，乖乖在这里设置了一道密码开关，只有情人节当天宝贝才能看到这一份惊喜哦O(∩_∩)O哈哈~<br><img src="/2021/01/09/surprise/cover.jpg?v=1&amp;type=image" alt="这是哪个大宝贝？？？"></p><a id="more"></a><h2 id="惊喜开启指南"><a href="#惊喜开启指南" class="headerlink" title="惊喜开启指南"></a>惊喜开启指南</h2><h3 id="第一步：打开我们的照片墙😋"><a href="#第一步：打开我们的照片墙😋" class="headerlink" title="第一步：打开我们的照片墙😋"></a>第一步：打开我们的照片墙😋</h3><p>请宝贝用<strong>电脑</strong>打开浏览器，访问我的个人网站：yangminghong.top<br><img src="/2021/01/09/surprise/web.png?v=1&amp;type=image" alt="访问我的个人网站：yangminghong.top"></p><h3 id="第二步：进入“小时光”🤪"><a href="#第二步：进入“小时光”🤪" class="headerlink" title="第二步：进入“小时光”🤪"></a>第二步：进入“小时光”🤪</h3><p>宝贝有没有发现导航栏上的“小时光”板块！？那是我们的相遇相识相知的纪念。<br><img src="/2021/01/09/surprise/album.png?v=1&amp;type=image" alt="进入我的照片墙"></p><h3 id="第三步：点击韩美丽的专属相册😚"><a href="#第三步：点击韩美丽的专属相册😚" class="headerlink" title="第三步：点击韩美丽的专属相册😚"></a>第三步：点击韩美丽的专属相册😚</h3><p>呐呐~~，就是下面这个小可爱！！！O(∩_∩)O<br><img src="/2021/01/09/surprise/gallery.png?v=1&amp;type=image" alt="访问我们的私密相册"></p><h3 id="第五步：输入密码访问哦-▽-🤗"><a href="#第五步：输入密码访问哦-▽-🤗" class="headerlink" title="第五步：输入密码访问哦~(*^▽^*)~🤗"></a>第五步：输入密码访问哦~(*^▽^*)~🤗</h3><p>因为是我们的私密相册，所以需要输入我俩的生日号码才能芝麻开门哦~密码是<strong>宝贝生日</strong>加<strong>我的生日</strong>：<strong>1999022619951113</strong><br><img src="/2021/01/09/surprise/password.png?v=1&amp;type=image" alt="输入密码访问哦！"></p><h3 id="第六步：-惊喜藏在里面，宝贝自己仔细找找哦-我相信，以宝贝的聪明才智，一定能发现彩蛋的哦😊"><a href="#第六步：-惊喜藏在里面，宝贝自己仔细找找哦-我相信，以宝贝的聪明才智，一定能发现彩蛋的哦😊" class="headerlink" title="第六步： 惊喜藏在里面，宝贝自己仔细找找哦~  我相信，以宝贝的聪明才智，一定能发现彩蛋的哦😊"></a>第六步： 惊喜藏在里面，宝贝自己<strong>仔细找找</strong>哦~  我相信，以宝贝的聪明才智，一定能发现彩蛋的哦😊</h3><p><img src="/2021/01/09/surprise/66.jpg?v=1&amp;type=image" alt="放个宝贝美照压压惊"></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 特别礼物 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Valentine&#39;s Day </tag>
+            
+            <tag> Surprise </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Focus on deep learning and time series forecasting with some resources and code.</title>
       <link href="/2020/08/07/deep-learning-time-series-master/"/>
       <url>/2020/08/07/deep-learning-time-series-master/</url>

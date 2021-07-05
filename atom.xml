@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangminghong.top/"/>
-  <updated>2020-08-07T11:27:53.531Z</updated>
+  <updated>2021-01-09T08:52:11.602Z</updated>
   <id>http://yangminghong.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>惊喜开启指南</title>
+    <link href="http://yangminghong.top/2021/01/09/surprise/"/>
+    <id>http://yangminghong.top/2021/01/09/surprise/</id>
+    <published>2021-01-09T06:32:25.000Z</published>
+    <updated>2021-01-09T08:52:11.602Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;晓莉大宝贝，这是乖乖为你准备的情人节惊喜指南。首先说明，这不是惊喜，这是打开惊喜的钥匙。至于为什么我要这么做呢？因为我知道宝贝等不到情人节那一天，就忍不住想要打开惊喜。所以，乖乖在这里设置了一道密码开关，只有情人节当天宝贝才能看到这一份惊喜哦O(∩_∩)O哈哈~&lt;br&gt;&lt;img src=&quot;/2021/01/09/surprise/cover.jpg?v=1&amp;amp;type=image&quot; alt=&quot;这是哪个大宝贝？？？&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="特别礼物" scheme="http://yangminghong.top/categories/%E7%89%B9%E5%88%AB%E7%A4%BC%E7%89%A9/"/>
+    
+    
+      <category term="Valentine&#39;s Day" scheme="http://yangminghong.top/tags/Valentine-s-Day/"/>
+    
+      <category term="Surprise" scheme="http://yangminghong.top/tags/Surprise/"/>
+    
+  </entry>
   
   <entry>
     <title>Focus on deep learning and time series forecasting with some resources and code.</title>
@@ -552,38 +575,6 @@
 &lt;li&gt;UserRepository.java&lt;/li&gt;
 &lt;li&gt;Main.javva&lt;/li&gt;
 &lt;li&gt;beans-generic-di.xml&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring中使用注解配置Bean(2),使用@Autowired注解自动装配属性</title>
-    <link href="http://yangminghong.top/2020/03/08/spring-zhong-shi-yong-zhu-jie-pei-zhi-bean-2-shi-yong-autowired-zhu-jie-zi-dong-zhuang-pei-shu-xing/"/>
-    <id>http://yangminghong.top/2020/03/08/spring-zhong-shi-yong-zhu-jie-pei-zhi-bean-2-shi-yong-autowired-zhu-jie-zi-dong-zhuang-pei-shu-xing/</id>
-    <published>2020-03-08T09:38:37.000Z</published>
-    <updated>2020-06-06T09:28:48.697Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;在Spring的配置文件中使用&lt;code&gt;&amp;lt;context:component-scan&amp;gt;&lt;/code&gt;元素时，会自动注册 AutowireAnnotationBeanPostProcesser 实例，该实例会自动装配具有 @Autowired 和 @Resource、@Inject 注解标注的属性&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;TestObject.java&lt;/li&gt;
-&lt;li&gt;UserController.java&lt;/li&gt;
-&lt;li&gt;UserService.java&lt;/li&gt;
-&lt;li&gt;UserRepository.java&lt;/li&gt;
-&lt;li&gt;UserRepositoryImpl.java&lt;/li&gt;
-&lt;li&gt;UserJdbcRepositoryImpl.java&lt;/li&gt;
-&lt;li&gt;Main.java&lt;/li&gt;
-&lt;li&gt;beans-annotation.xml&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     
