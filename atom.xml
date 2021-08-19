@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangminghong.top/"/>
-  <updated>2021-01-09T08:52:11.602Z</updated>
+  <updated>2021-08-19T13:22:10.052Z</updated>
   <id>http://yangminghong.top/</id>
   
   <author>
@@ -15,6 +15,94 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【转载、学习】Java刷题常用API</title>
+    <link href="http://yangminghong.top/2021/08/19/java-shua-ti-chang-yong-api/"/>
+    <id>http://yangminghong.top/2021/08/19/java-shua-ti-chang-yong-api/</id>
+    <published>2021-08-19T13:19:38.000Z</published>
+    <updated>2021-08-19T13:22:10.052Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;  &lt;/p&gt;
+  
+  
+ &lt;meta charset=&quot;UTF-8&quot;&gt;  
+ &lt;meta http-equiv=&quot;x-ua-compatible&quot; content=&quot;IE=edge&quot;&gt;  
+ &lt;meta name=&quot;viewport&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yangminghong.top/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
+    
+      <category term="LeetCode" scheme="http://yangminghong.top/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【学习】大组会分享④</title>
+    <link href="http://yangminghong.top/2021/08/13/zu-hui-fen-xiang-si/"/>
+    <id>http://yangminghong.top/2021/08/13/zu-hui-fen-xiang-si/</id>
+    <published>2021-08-13T05:30:30.000Z</published>
+    <updated>2021-08-19T15:41:29.099Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;组会分享-Deep-Temporal-Point-Processes&quot;&gt;&lt;a href=&quot;#组会分享-Deep-Temporal-Point-Processes&quot; class=&quot;headerlink&quot; title=&quot;[组会分享] Deep Temporal
+        
+      
+    
+    </summary>
+    
+    
+      <category term="交流学习" scheme="http://yangminghong.top/categories/%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="嗑盐" scheme="http://yangminghong.top/tags/%E5%97%91%E7%9B%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【学习】大组会分享③</title>
+    <link href="http://yangminghong.top/2021/05/14/zu-hui-fen-xiang-san/"/>
+    <id>http://yangminghong.top/2021/05/14/zu-hui-fen-xiang-san/</id>
+    <published>2021-05-14T05:30:42.000Z</published>
+    <updated>2021-08-19T15:33:26.508Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;组会分享-Federated-Learning-with-Non-IID-Data&quot;&gt;&lt;a href=&quot;#组会分享-Federated-Learning-with-Non-IID-Data&quot; class=&quot;headerlink&quot; title=&quot;[组会分享]
+        
+      
+    
+    </summary>
+    
+    
+      <category term="交流学习" scheme="http://yangminghong.top/categories/%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="嗑盐" scheme="http://yangminghong.top/tags/%E5%97%91%E7%9B%90/"/>
+    
+  </entry>
   
   <entry>
     <title>惊喜开启指南</title>
@@ -36,6 +124,60 @@
       <category term="Valentine&#39;s Day" scheme="http://yangminghong.top/tags/Valentine-s-Day/"/>
     
       <category term="Surprise" scheme="http://yangminghong.top/tags/Surprise/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【学习】大组会分享②</title>
+    <link href="http://yangminghong.top/2020/11/17/zu-hui-fen-xiang-er/"/>
+    <id>http://yangminghong.top/2020/11/17/zu-hui-fen-xiang-er/</id>
+    <published>2020-11-17T05:30:42.000Z</published>
+    <updated>2021-08-19T15:31:50.112Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;组会分享-An-introduction-to-few-shot-time-series-prediction&quot;&gt;&lt;a href=&quot;#组会分享-An-introduction-to-few-shot-time-series-prediction&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="交流学习" scheme="http://yangminghong.top/categories/%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="嗑盐" scheme="http://yangminghong.top/tags/%E5%97%91%E7%9B%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【学习】大组会分享①</title>
+    <link href="http://yangminghong.top/2020/08/28/zu-hui-fen-xiang-yi/"/>
+    <id>http://yangminghong.top/2020/08/28/zu-hui-fen-xiang-yi/</id>
+    <published>2020-08-28T05:19:38.000Z</published>
+    <updated>2021-08-19T15:41:40.712Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;组会分享-Some-Advances-about-Few-Shot-Learning&quot;&gt;&lt;a href=&quot;#组会分享-Some-Advances-about-Few-Shot-Learning&quot; class=&quot;headerlink&quot; title=&quot;[组会分享]
+        
+      
+    
+    </summary>
+    
+    
+      <category term="交流学习" scheme="http://yangminghong.top/categories/%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="嗑盐" scheme="http://yangminghong.top/tags/%E5%97%91%E7%9B%90/"/>
     
   </entry>
   
@@ -439,142 +581,6 @@
 &lt;li&gt;Main.java&lt;/li&gt;
 &lt;li&gt;applicationContext.xml&lt;/li&gt;
 &lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring AOP的前置通知@Before</title>
-    <link href="http://yangminghong.top/2020/03/10/spring-aop-de-qian-zhi-tong-zhi-before/"/>
-    <id>http://yangminghong.top/2020/03/10/spring-aop-de-qian-zhi-tong-zhi-before/</id>
-    <published>2020-03-10T14:36:38.000Z</published>
-    <updated>2020-06-06T09:28:48.688Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;Spring AOP可以使用@Before注解来实现前置通知, 在方法开始执行之前执行一段代码（可以用来做日志）&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ArithmeticCalculator.java&lt;/li&gt;
-&lt;li&gt;ArithmeticCalculatorImpl.java&lt;/li&gt;
-&lt;li&gt;LoggingAspect.java&lt;/li&gt;
-&lt;li&gt;Main.java&lt;/li&gt;
-&lt;li&gt;applicationContext.xml&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>基于AspectJ注解来使用Spring AOP</title>
-    <link href="http://yangminghong.top/2020/03/09/ji-yu-aspectj-zhu-jie-lai-shi-yong-spring-aop/"/>
-    <id>http://yangminghong.top/2020/03/09/ji-yu-aspectj-zhu-jie-lai-shi-yong-spring-aop/</id>
-    <published>2020-03-09T11:59:06.000Z</published>
-    <updated>2020-06-06T09:28:48.850Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;AspectJ：Java社区里最完整最流行的AOP框架.在Spring2.0以上版本中, 可以使用基于AspectJ注解或基于XML配置的AOP&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring AOP的相关基础介绍</title>
-    <link href="http://yangminghong.top/2020/03/09/spring-aop-de-xiang-guan-ji-chu-jie-shao/"/>
-    <id>http://yangminghong.top/2020/03/09/spring-aop-de-xiang-guan-ji-chu-jie-shao/</id>
-    <published>2020-03-09T11:20:12.000Z</published>
-    <updated>2020-07-27T09:14:04.975Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;Aop（Aspect-Oriented Programming，面向切面编程）是一种新的方法论，是对传统OOP（Object-Oriented Programming，面向对象编程）的补充&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring中使用动态代理解决日志需求</title>
-    <link href="http://yangminghong.top/2020/03/09/spring-zhong-shi-yong-dong-tai-dai-li-jie-jue-ri-zhi-xu-qiu/"/>
-    <id>http://yangminghong.top/2020/03/09/spring-zhong-shi-yong-dong-tai-dai-li-jie-jue-ri-zhi-xu-qiu/</id>
-    <published>2020-03-09T11:05:58.000Z</published>
-    <updated>2020-06-06T09:28:48.695Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;使用动态代理技术实现在类的方法中加入日志信息。通过动态代理的方式写入日志信息不会给原来的类带来代码混乱和分散的问题，便于维护&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;ArithmeticCalculator.java&lt;/li&gt;
-&lt;li&gt;ArithmeticCalculatorImpl.java&lt;/li&gt;
-&lt;li&gt;ArithmeticCalculatorLoggingImpl.java&lt;/li&gt;
-&lt;li&gt;ArithmeticCalculatorLoggingProxy.java&lt;/li&gt;
-&lt;li&gt;Main.java&lt;/li&gt;&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/categories/Spring/"/>
-    
-    
-      <category term="Spring" scheme="http://yangminghong.top/tags/Spring/"/>
-    
-      <category term="Java" scheme="http://yangminghong.top/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Spring中的泛型依赖注入</title>
-    <link href="http://yangminghong.top/2020/03/08/spring-zhong-de-fan-xing-yi-lai-zhu-ru/"/>
-    <id>http://yangminghong.top/2020/03/08/spring-zhong-de-fan-xing-yi-lai-zhu-ru/</id>
-    <published>2020-03-08T09:55:20.000Z</published>
-    <updated>2020-06-06T09:28:48.699Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;引言：&quot;&gt;&lt;a href=&quot;#引言：&quot; class=&quot;headerlink&quot; title=&quot;引言：&quot;&gt;&lt;/a&gt;引言：&lt;/h2&gt;&lt;p&gt;Spring可以为子类注入子类对应的泛型类型的成员变量的引用&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;User.java&lt;/li&gt;
-&lt;li&gt;BaseService.java&lt;/li&gt;
-&lt;li&gt;UserService.java&lt;/li&gt;
-&lt;li&gt;BaseRepository.java&lt;/li&gt;
-&lt;li&gt;UserRepository.java&lt;/li&gt;
-&lt;li&gt;Main.javva&lt;/li&gt;
-&lt;li&gt;beans-generic-di.xml&lt;/li&gt;&lt;/ul&gt;
     
     </summary>
     

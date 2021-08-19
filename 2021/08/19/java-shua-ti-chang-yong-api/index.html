@@ -1,0 +1,1526 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="【转载、学习】Java刷题常用API, 小杨同学のBlog">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166238192-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', 'UA-166238192-1');
+</script>
+
+
+    <title>【转载、学习】Java刷题常用API | 小杨同学のBlog</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>	
+
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="小杨同学のBlog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">小杨同学のBlog</span>
+                </a>
+            </div>
+            
+
+
+<div class="deng-box">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">建党</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+<div class="deng-box1">
+    <div class="deng">
+        <div class="xian"></div>
+        <div class="deng-a">
+            <div class="deng-b"><div class="deng-t">百年</div></div>
+        </div>
+        <div class="shui shui-a"><div class="shui-c"></div><div class="shui-b"></div></div>
+    </div>
+</div>
+
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/gallery" class="waves-effect waves-light">
+      
+      <i class="fas fa-image" style="zoom: 0.6;"></i>
+      
+      <span>小时光</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于我</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">小杨同学のBlog</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/gallery" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-image"></i>
+			
+			小时光
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/ray-yang521" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/ray-yang521" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('这是博主的私密博文哦~请输入密码查看o(^▽^)o')).toString(CryptoJS.enc.Hex)) {
+                alert('对不起！密码错误哦！( ▼-▼ )');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/46.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">【转载、学习】Java刷题常用API</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        height: calc(100vh - 250px);
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+	
+		<!-- 春节主题 小挂件 -->
+		<div class="caishendeng">
+			<div class="post_detail_caishenxian"><img class="caishenpic lala" src="https://nekodeng.gitee.io/medias/spring-img/caishen.png">
+			</div>
+		</div>
+		
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                            <a href="/tags/LeetCode/">
+                                <span class="chip bg-color">LeetCode</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-08-19
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-08-19
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    1.7k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    7 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>  </p>
+  
+  
+ <meta charset="UTF-8">  
+ <meta http-equiv="x-ua-compatible" content="IE=edge">  
+ <meta name="viewport" content="width=device-width, initial-scale=1">  
+ <title>Title</title>  
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="小杨同学のBlog" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css">  
+  
+<div class="post">  
+ <h1 class="postTitle">  
+ [Java刷题常用API](https://www.cnblogs.com/chzhyang/p/13494554.html)
+ </h1>  
+ <div class="clear"></div>  
+ <div class="postBody">  
+ <div id="cnblogs_post_body" class="blogpost-body cnblogs-markdown">  
+ <p></p>  
+ <div class="toc">  
+ <div class="toc-container-header">目录</div>  
+ <ul>  
+ <li><a href="#输入输出">输入输出</a></li>  
+ <li><a href="#快速查看">快速查看</a></li>  
+ <li><a href="#最大最小值">最大最小值</a></li>  
+ <li><a href="#string">string</a>  
+ <ul>  
+ <li><a href="#stringbuilder">stringbuilder</a></li>  
+ </ul>  
+ </li>  
+ <li><a href="#集合">集合</a>  
+ <ul>  
+ <li><a href="#map">map</a></li>  
+ <li><a href="#queue">queue</a></li>  
+ <li><a href="#stack">stack</a></li>  
+ <li><a href="#set">set</a></li>  
+ <li><a href="#优先队列-priorityqueue-heap">优先队列 PriorityQueue (Heap)</a></li>  
+ </ul>  
+ </li>  
+ <li><a href="#数组">数组</a>  
+ <ul>  
+ <li><a href="#静态数组">静态数组</a></li>  
+ <li><a href="#动态数组">动态数组</a></li>  
+ </ul>  
+ </li>  
+ <li><a href="#math">Math</a></li>  
+ </ul>  
+ </div>  
+ <p></p>  
+ <h1 id="输入输出">输入输出</h1>  
+ <pre class="line-numbers language-language-java hljs">Scanner sc = <span class="hljs-keyword"><code class="language-language-java hljs">Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);  
+String s = sc.next();<span class="hljs-comment">//字符串</span>  
+<span class="hljs-keyword">double</span> t = sc.nextDouble(); <span class="hljs-comment">//浮点数</span>  
+String s = sc.nextLine();<span class="hljs-comment">//一行</span>  
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>  
+ <p>判断是否有下一个输入，用sc.hasNext()或sc.hasNextInt()或sc.hasNextDouble()或sc.hasNextLine()</p>  
+ <pre class="line-numbers language-language-java hljs"><span class="hljs-comment"><code class="language-language-java hljs"><span class="hljs-comment">//循环输入整数</span>  
+<span class="hljs-keyword">while</span>(in.hasNextInt()){  
+   <span class="hljs-keyword">int</span> n = sc.nextInt();  
+}  
+<span class="hljs-comment">//循环输入字符</span>  
+<span class="hljs-keyword">while</span>(in.hasNext()){  
+
+<p>}<br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br> <blockquote><br> <p><br>  注意，如果使用nextInt()或next()之后，要用nextLine()，需手动调用.nextLine()吸收掉回车符或空格。但是如果不是交叉使用，比如连续使用next()或next()是可以自动吸收掉空格或回车符的。</p><br> </blockquote><br> <p>nextInt() 只读取整数类型数据，读取完输入后把<strong>光标放在同一行该数据的后面</strong>。</p><br> <p>next() 只读取到空格，不能读取被空格分开的两个单词，读取完后把光标位置<strong>同上</strong>。</p><br> <p>nextLine() 读取整行的数据包括单词间的空格和结束的回车符，读取结束后把<strong>光标放在下一行开头。</strong></p><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-keyword">import</span> java.util.ArrayList;<br><span class="hljs-keyword">import</span> java.util.List;<br><span class="hljs-keyword">import</span> java.util.Scanner;<br><span class="hljs-comment">/**<br>input:<br>2 3<br>1 2 3<br>4 5 6<br>avd<br>dvd<br>abcdf fsfd<br>output：<br>123<br>456<br>avd<br>dvd<br>abcdf fsfd<br>*/</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title"><code class="language-language-java hljs"><span class="hljs-keyword">import</span> java.util.ArrayList;<br><span class="hljs-keyword">import</span> java.util.List;<br><span class="hljs-keyword">import</span> java.util.Scanner;<br><span class="hljs-comment">/**<br>input:<br>2 3<br>1 2 3<br>4 5 6<br>avd<br>dvd<br>abcdf fsfd<br>output：<br>123<br>456<br>avd<br>dvd<br>abcdf fsfd<br>*/</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{  <p></p>
+<pre><code><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p>  class="hljs-keyword"&gt;void <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> {<br>        Scanner sc = <span class="hljs-keyword">new</span> Scanner(System.in);<br>        <span class="hljs-keyword">int</span> n = sc.nextInt();<br>        <span class="hljs-keyword">int</span> m = sc.nextInt();<br>        List&lt;List&lt;Integer&gt;&gt; lists = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;n; i++){<br>            List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<br>            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j=<span class="hljs-number">0</span>; j&lt;m; j++){<br>                list.add(sc.nextInt());<br>            }<br>            lists.add(list);<br>        }<br>        String s1 = sc.next();<br>        <span class="hljs-keyword">char</span>[] c = sc.next().toCharArray();<br>        sc.nextLine();<span class="hljs-comment">//手动 调用.nextLine()越过“/n“</span><br>  String s2 = sc.nextLine();<br>        <span class="hljs-comment">//output</span><br> <span class="hljs-keyword">for</span>(List&lt;Integer&gt; list:lists){<br>            <span class="hljs-keyword">for</span>(Integer a: list){<br>                System.out.print(a);<br>            }<br>            System.out.println();<br>        }<br>        System.out.println(s1);<br>        System.out.println(c);<br>        System.out.println(s2);<br>    }<br>}  </p>
+<p></p></code></pre><br> <p>循环中hasNext()无法结束， 可以在循环中加入break条件，也可以手动设置终止符</p><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-comment">//例：以“0”作为终止符</span><br>Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);<br><span class="hljs-keyword">while</span> (!in.hasNext(<span class="hljs-string">"0"</span>)) {<br>System.out.println(in.next());<br>}<br></code></pre><br> <p>输出</p><br> <pre><code class="hljs css"><span class="hljs-selector-tag">System</span><span class="hljs-selector-class">.out</span><span class="hljs-selector-class">.println</span>();<br><span class="hljs-selector-tag">System</span><span class="hljs-selector-class">.out</span><span class="hljs-selector-class">.printf</span>();<br></code></pre><br> <h1 id="快速查看">快速查看</h1><br> <p><img src="https://i.loli.net/2020/08/12/K12bdj8I3BMANoJ.png" alt="截屏2020-08-12 16.46.36" loading="lazy"><br> </p><br> <h1 id="最大最小值">最大最小值</h1><br> <p>fmax = Float.MAX_VALUE;</p><br> <p>fmin = Float.MIN_VALUE;</p><br> <p>dmax = Double.MAX_VALUE;</p><br> <p>dmin = Double.MIN_VALUE;</p><br> <p>bmax = Byte.MAX_VALUE;</p><br> <p>bmin = Byte.MIN_VALUE;</p><br> <p>cmax = Character.MAX_VALUE;</p><br> <p>cmin = Character.MIN_VALUE;</p><br> <p>shmax = Short.MAX_VALUE;</p><br> <p>shmin = Short.MIN_VALUE;</p><br> <p>imax = Integer.MAX_VALUE;</p><br> <p>imin = Integer.MIN_VALUE;</p><br> <p>lmax = Long.MAX_VALUE;</p><br> <p>lmin = Long.MIN_VALUE;</p><br> <h1 id="string">string</h1><br> <p>不可变量, 每个位置元素是个char</p><br> <p>初始化</p><br> <pre><code class="language-java hljs">String s = <span class="hljs-string"><code class="language-language-java hljs"><span class="hljs-comment">//例：以“0”作为终止符</span><br>Scanner in = <span class="hljs-keyword">new</span> Scanner(System.in);<br><span class="hljs-keyword">while</span> (!in.hasNext(<span class="hljs-string">"0"</span>)) {<br>System.out.println(in.next());<br>}<br></code></pre><br> <p>输出</p><br> <pre><code class="hljs css"><span class="hljs-selector-tag">System</span><span class="hljs-selector-class">.out</span><span class="hljs-selector-class">.println</span>();<br><span class="hljs-selector-tag">System</span><span class="hljs-selector-class">.out</span><span class="hljs-selector-class">.printf</span>();<br></code></pre><br> <h1 id="快速查看">快速查看</h1><br> <p><img src="https://i.loli.net/2020/08/12/K12bdj8I3BMANoJ.png" alt="截屏2020-08-12 16.46.36" loading="lazy"><br> </p><br> <h1 id="最大最小值">最大最小值</h1><br> <p>fmax = Float.MAX_VALUE;</p><br> <p>fmin = Float.MIN_VALUE;</p><br> <p>dmax = Double.MAX_VALUE;</p><br> <p>dmin = Double.MIN_VALUE;</p><br> <p>bmax = Byte.MAX_VALUE;</p><br> <p>bmin = Byte.MIN_VALUE;</p><br> <p>cmax = Character.MAX_VALUE;</p><br> <p>cmin = Character.MIN_VALUE;</p><br> <p>shmax = Short.MAX_VALUE;</p><br> <p>shmin = Short.MIN_VALUE;</p><br> <p>imax = Integer.MAX_VALUE;</p><br> <p>imin = Integer.MIN_VALUE;</p><br> <p>lmax = Long.MAX_VALUE;</p><br> <p>lmin = Long.MIN_VALUE;</p><br> <h1 id="string">string</h1><br> <p>不可变量, 每个位置元素是个char</p><br> <p>初始化</p><br> <pre><code class="language-java hljs">String s = <span class="hljs-string">"abc"</span>;  <p></p>
+<p>s = <span class="hljs-string">"abc"</span><br>String s2 = <span class="hljs-keyword">new</span> String(s);  </p>
+<p>s = <span class="hljs-string">"abc"</span>;<br><span class="hljs-keyword">char</span>[] c = s.toCharArray();<br>String s3 = <span class="hljs-keyword">new</span> String(c);  </p>
+<p>String s4 = <span class="hljs-keyword">new</span> String(c, <span class="hljs-number">1</span>, <span class="hljs-number">3</span>);    <span class="hljs-comment">// [offset, offset + count) [)</span>  </p>
+<p></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><br> <p>String.valueOf( 一个参数Object/基本数据类型 ) 返回传入参数obj的toString(),若为空返回字符串”null”。 若为基本类型调用其<br> 包装类的toString方法（Integer.toString(i)）</p><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-keyword">char</span>[] ch = {<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>};<br>String s5 = String.valueOf(ch);<span class="hljs-comment">//char数组转换成string</span><br></code></pre><br> <p>方法: charAt, length, substring, equals, indexOf, lastIndexOf, replace, toCharArray, trim, split,<br>                toLowerCase, toUpperCase</p><br> <pre><code class="language-java hljs">.substring(<span class="hljs-keyword">int</span> beginIndex, <span class="hljs-keyword">int</span> endIndex);    <span class="hljs-comment">// 返回字符片段[beginIndex, endIndex) --- O(n)</span><br>.substring(<span class="hljs-keyword">int</span> beginIndex);    <span class="hljs-comment"><code class="language-language-java hljs"><span class="hljs-keyword">char</span>[] ch = {<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>};<br>String s5 = String.valueOf(ch);<span class="hljs-comment">//char数组转换成string</span><br></code></pre><br> <p>方法: charAt, length, substring, equals, indexOf, lastIndexOf, replace, toCharArray, trim, split,<br>                toLowerCase, toUpperCase</p><br> <pre><code class="language-java hljs">.substring(<span class="hljs-keyword">int</span> beginIndex, <span class="hljs-keyword">int</span> endIndex);    <span class="hljs-comment">// 返回字符片段[beginIndex, endIndex) --- O(n)</span><br>.substring(<span class="hljs-keyword">int</span> beginIndex);    <span class="hljs-comment">// 返回字符片段[beginIndex, end_of_String) 就是从beginIndex开始后面的 ---- O(n)</span>  <p></p>
+<p><span class="hljs-comment">//indexOf 是（暴力查找字符串，不是KMP）</span><br>.indexOf(String str)    <span class="hljs-comment">// 返回str第一个出现的位置(int)，没找到则返回-1。 --- O(m * n) m为原串长度， n为str长度</span><br>s.indexOf(String str, <span class="hljs-keyword">int</span> fromIndex);    <span class="hljs-comment">// 同上，但从fromIndex开始找 --- O(m * n)</span>  </p>
+<p>.lastIndexOf(String str);    <span class="hljs-comment">// 返回str最后出现的位置(int)，没找到则返回-1。 --- O(m * n) m为原串长度， n为str长度</span><br><span class="hljs-comment">// (假如要找一个字符char c，str可以表示成String.valueOf(c),然后作为参数传进去.</span><br>.lastIndexOf(String str, <span class="hljs-keyword">int</span> fromIndex);    <span class="hljs-comment">//从fromIndex开始从后往前找 [0 <- fromIndex] --- O(m * n)</span>  </p>
+<p>.replace(<span class="hljs-keyword">char</span> oldChar, <span class="hljs-keyword">char</span> newChar);    <span class="hljs-comment">// 返回一个新字符串String，其oldChar全部变成newChar --- O(n)</span><br>replaceAll(String s1,String s2);<span class="hljs-comment">//用s2替换目标字符串中出现的所有s1</span><br>replaceFirst(String s1,String s2);<span class="hljs-comment">//用s2替换目标字符串中出现的第一个s1</span>  </p>
+<p>.toCharArray();    <span class="hljs-comment">// 返回char[] 数组。 把String转换成字符数组 --- O(n)</span>  </p>
+<p>.trim();    <span class="hljs-comment">// 返回去除前后空格的新字符串 --- O(n)</span>  </p>
+<p>.split(String regex);    <span class="hljs-comment">// 返回 String[]，以regex(正则表达式)拆分 ---- O(n)</span><br><span class="hljs-comment">// 从非"/"算起 若"/a/c" -> 会变成"" "a" "c"</span><br>String[] date = str.split(<span class="hljs-string">"/"</span>);     <span class="hljs-comment">// date[0]:1995 date[1]:12 date[2]:18 --- O(n)</span>  </p>
+<p><span class="hljs-comment">//转换大小写</span><br>s = s.toLowerCase();    <span class="hljs-comment">// 返回一个新的字符串全部转成小写 --- O(n)</span><br>s = s.toUpperCase();    <span class="hljs-comment">// 返回一个新的字符串全部转成大写 --- O(n)</span><br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br> <p>string的比较</p><br> <pre class="line-numbers language-language-java hljs">compareTo(String anotherString)<span class="hljs-comment">//按字典顺序比较两个字符串</span><br>compareToIgnoreCase(String anotherString)<span class="hljs-comment">//按字典顺序且不区分大小写比较两个字符串</span><br>equals(String anotherString)<span class="hljs-comment">//判断两个字符串是否相等，相等返回true否则返回false</span><br>equalsIgnoreCase(String str)<span class="hljs-comment">//同上，不区分大小写。</span><br></code></pre><br> <blockquote><br> <p>如果a &gt; b 返回大于0的整数， 如果a == b 返回0， 如果a &lt; b 返回小于0的整数<br><br>  其实是返回a和b第一个不同字符的差值。</p><br> </blockquote><br> <p>搜索子串</p><br> <pre><code class="language-java hljs">indexOf(String str);<span class="hljs-comment">//返回子串在此字符串中第一次出现的索引</span><br>indexOf(String str, <span class="hljs-keyword">int</span> fromindex);<span class="hljs-comment"><code class="language-language-java hljs">compareTo(String anotherString)<span class="hljs-comment">//按字典顺序比较两个字符串</span><br>compareToIgnoreCase(String anotherString)<span class="hljs-comment">//按字典顺序且不区分大小写比较两个字符串</span><br>equals(String anotherString)<span class="hljs-comment">//判断两个字符串是否相等，相等返回true否则返回false</span><br>equalsIgnoreCase(String str)<span class="hljs-comment">//同上，不区分大小写。</span><br></code></pre><br> <blockquote><br> <p>如果a &gt; b 返回大于0的整数， 如果a == b 返回0， 如果a &lt; b 返回小于0的整数<br><br>  其实是返回a和b第一个不同字符的差值。</p><br> </blockquote><br> <p>搜索子串</p><br> <pre><code class="language-java hljs">indexOf(String str);<span class="hljs-comment">//返回子串在此字符串中第一次出现的索引</span><br>indexOf(String str, <span class="hljs-keyword">int</span> fromindex);<span class="hljs-comment">//同上，从指定索引开始搜索</span>  <p></p>
+<p>lastIndexOf(<span class="hljs-keyword">int</span> ch);<span class="hljs-comment">//返回指定字符在此字符串最后一次出现的索引</span><br>lastIndexOf(<span class="hljs-keyword">int</span> ch, <span class="hljs-keyword">int</span> fromindex);<span class="hljs-comment">//同上， 从指定索引开始搜索</span><br>lastIndexOf(String str);<span class="hljs-comment">//返回子串在此字符串最后一次出现的索引</span><br>lastIndexOf(String str, <span class="hljs-keyword">int</span> fromindex);<span class="hljs-comment">//同上， 从指定索引开始搜索</span>  </p>
+<p>startsWith(String prefix);<span class="hljs-comment">// 检查是否以某一前缀开始</span><br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br> <p>其他类型转换为string</p><br> <pre class="line-numbers language-language-java hljs">String.valueOf(<span class="hljs-keyword">char</span>[] data);<span class="hljs-comment">//返回 char数组的字符串表示形式</span><br>String.valueOf(<span class="hljs-keyword">char</span>[] data,<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">int</span> count)<span class="hljs-comment">//返回 char 数组参数的特定子数组的字符串表示形式</span><br>String.valueOf(<span class="hljs-keyword">int</span> i);<span class="hljs-comment">//返回 int 参数的字符串表示形式</span><br></code></pre><br> <p>string转换为其他类型</p><br> <pre><code class="language-java hljs">String sInt = <span class="hljs-string">"123"</span>;<br><span class="hljs-keyword">int</span> s = Integer.parseInt(sInt);<br><span class="hljs-keyword">long</span> ls = Long.parseLong(sInt);<br><span class="hljs-keyword">char</span>[] c = s.toCharArray();<br></code></pre><br> <h2 id="stringbuilder">stringbuilder</h2><br> <p>非线程安全</p><br> <p>方法: append, charAt, length, setCharAt, insert, deleteCharAt, delete, reverse, toString</p><br> <pre><code class="language-java hljs">StringBuilder sb = <span class="hljs-keyword">new</span> StringBuilder();<br>StringBuilder sb = StringBuilder(String str);<span class="hljs-comment">//构建一个值为str的可变字符串。</span><br>.setCharAt(<span class="hljs-keyword">int</span> index, <span class="hljs-keyword">char</span> ch);    <span class="hljs-comment">// 设置index位置的char为ch --- O(1)</span><br>.insert(<span class="hljs-keyword">int</span> offset, String str);    <span class="hljs-comment">// 在offer位置的插入字符串str--- O(m + n)</span><br>.deleteCharAt(<span class="hljs-keyword">int</span> index);    <span class="hljs-comment">// 删除index位置的char --- O(n)</span><br>.deleteCharAt(sb.length() - <span class="hljs-number">1</span>);    <span class="hljs-comment">// 删除最后一个char --- O(1)</span><br>.delete(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end);    <span class="hljs-comment">// 删除[start, end)位置的char --- O(n)</span><br>.delete(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end);<span class="hljs-comment">//移除此序列从start到end-1的字符串</span><br>.reverse();    <span class="hljs-comment">// 反转缓存字符串 --- O(n)</span><br>.toString();    <span class="hljs-comment"><code class="language-language-java hljs">String.valueOf(<span class="hljs-keyword">char</span>[] data);<span class="hljs-comment">//返回 char数组的字符串表示形式</span><br>String.valueOf(<span class="hljs-keyword">char</span>[] data,<span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">int</span> count)<span class="hljs-comment">//返回 char 数组参数的特定子数组的字符串表示形式</span><br>String.valueOf(<span class="hljs-keyword">int</span> i);<span class="hljs-comment">//返回 int 参数的字符串表示形式</span><br></code></pre><br> <p>string转换为其他类型</p><br> <pre><code class="language-java hljs">String sInt = <span class="hljs-string">"123"</span>;<br><span class="hljs-keyword">int</span> s = Integer.parseInt(sInt);<br><span class="hljs-keyword">long</span> ls = Long.parseLong(sInt);<br><span class="hljs-keyword">char</span>[] c = s.toCharArray();<br></code></pre><br> <h2 id="stringbuilder">stringbuilder</h2><br> <p>非线程安全</p><br> <p>方法: append, charAt, length, setCharAt, insert, deleteCharAt, delete, reverse, toString</p><br> <pre><code class="language-java hljs">StringBuilder sb = <span class="hljs-keyword">new</span> StringBuilder();<br>StringBuilder sb = StringBuilder(String str);<span class="hljs-comment">//构建一个值为str的可变字符串。</span><br>.setCharAt(<span class="hljs-keyword">int</span> index, <span class="hljs-keyword">char</span> ch);    <span class="hljs-comment">// 设置index位置的char为ch --- O(1)</span><br>.insert(<span class="hljs-keyword">int</span> offset, String str);    <span class="hljs-comment">// 在offer位置的插入字符串str--- O(m + n)</span><br>.deleteCharAt(<span class="hljs-keyword">int</span> index);    <span class="hljs-comment">// 删除index位置的char --- O(n)</span><br>.deleteCharAt(sb.length() - <span class="hljs-number">1</span>);    <span class="hljs-comment">// 删除最后一个char --- O(1)</span><br>.delete(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end);    <span class="hljs-comment">// 删除[start, end)位置的char --- O(n)</span><br>.delete(<span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end);<span class="hljs-comment">//移除此序列从start到end-1的字符串</span><br>.reverse();    <span class="hljs-comment">// 反转缓存字符串 --- O(n)</span><br>.toString();    <span class="hljs-comment">// 返回一个与构建起或缓冲器内容相同的字符串 --- O(n)</span>  <p></p>
+<p>append(String str);<span class="hljs-comment">//在此字符串追加str。</span><br>append(StringBuilder str);<span class="hljs-comment">//在此字符串追加str。</span><br>append(<span class="hljs-keyword">char</span>[] str, <span class="hljs-keyword">int</span> offset, <span class="hljs-keyword">int</span> len);<span class="hljs-comment">//将char的子数组追加到此字符串</span><br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br> <p>查找</p><br> <pre class="line-numbers language-language-java hljs">indexOf(String str);<span class="hljs-comment">//返回子字符串第一次出现的索引</span><br>indexOf(String str, <span class="hljs-keyword">int</span> fromIndex);<span class="hljs-comment"><code class="language-language-java hljs">indexOf(String str);<span class="hljs-comment">//返回子字符串第一次出现的索引</span><br>indexOf(String str, <span class="hljs-keyword">int</span> fromIndex);<span class="hljs-comment">//同上，从指定位置查找</span>  <p></p>
+<p>lastIndexOf(String str);<span class="hljs-comment">//返回子字符串最后一次出现的索引</span><br>lastIndexOf(String str, <span class="hljs-keyword">int</span> fromIndex);<span class="hljs-comment">//同上，从指定位置查找</span><br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br> <h1 id="集合">集合</h1><br> <h2 id="map">map</h2><br> <p>方法：put, get, getOrDefault, containsKey, containsValue, keySet, values, isEmpty, size</p><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-keyword">import</span> java.util.HashMap;<br><span class="hljs-keyword">import</span> java.util.Iterator;<br><span class="hljs-keyword"><code class="language-language-java hljs"><span class="hljs-keyword">import</span> java.util.HashMap;<br><span class="hljs-keyword">import</span> java.util.Iterator;<br><span class="hljs-keyword">import</span> java.util.Map;  <p></p>
+<p><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestMap</span> </span>{<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br>                Map<String, String> map = <span class="hljs-keyword">new</span> HashMap<String, String>();<br>                map.put(<span class="hljs-string">"1"</span>, <span class="hljs-string">"a"</span>);<br>                map.put(<span class="hljs-string">"2"</span>, <span class="hljs-string">"b"</span>);<br>                map.put(<span class="hljs-string">"3"</span>, <span class="hljs-string">"c"</span>);  </p>
+<pre><code>            <span class="hljs-comment">//最简洁、最通用的遍历方式 </span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p> <span class="hljs-keyword">for</span> (Map.Entry&lt;String, String&gt; entry : map.entrySet()) {<br>                        System.out.println(entry.getKey() + <span class="hljs-string">" = "</span> + entry.getValue());<br>                }  </p>
+<pre><code>      &lt;span class="hljs-comment"&gt;//.keySet();    // 返回一个Set,这个Set中包含Map中所有的Key --- O(1)&lt;/span&gt;  </code></pre><p> <span class="hljs-keyword">for</span> (Character key : map.keySet()) {<br>             <span class="hljs-comment">// Operate with each key</span><br>  }<br>          <span class="hljs-comment">//.values();    // 返回一个Collection&lt;v&gt;,里面全是对应的每一个value --- O(1)</span><br> <span class="hljs-keyword">for</span> (Integer value : map.values()) {<br>             <span class="hljs-comment">// Operate with each values</span><br>  }<br>        }<br>}<br></p></code></pre><br> <h2 id="queue">queue</h2><br> <p>方法：offer, poll, peek, isEmpty, size</p><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-keyword">import</span> java.util.Queue;<br><span class="hljs-keyword"><code class="language-language-java hljs"><span class="hljs-keyword">import</span> java.util.Queue;<br><span class="hljs-keyword">import</span> java.util.concurrent.LinkedBlockingQueue;  <p></p>
+<p><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestQueue</span> </span>{<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br>                Queue<Integer> q = <span class="hljs-keyword">new</span> LinkedBlockingQueue<Integer>(); <span class="hljs-comment">//初始化</span><br> <span class="hljs-comment">//把把集合如Stack、Set、List等Collection作为参数</span><br>  Set<Integer> s = <span class="hljs-keyword">new</span> HashSet<>();<br>                        Queue<Integer> q = <span class="hljs-keyword">new</span> LinkedList<>(s);<br>                <span class="hljs-comment">//初始化队列 </span><br> <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i < <span class="hljs-number">5</span>; i++) {<br>                        q.offer(i); <span class="hljs-comment">//入队</span><br>  }<br>                System.out.println(<span class="hljs-string">"-------1-----"</span>);<br>                <span class="hljs-comment">//集合方式遍历，元素不会被移除 </span><br> <span class="hljs-keyword">for</span> (Integer x : q) {<br>                        System.out.println(x);<br>                }<br>                System.out.println(<span class="hljs-string">"-------2-----"</span>);<br>                <span class="hljs-comment">//队列方式遍历，元素逐个被移除 </span><br> <span class="hljs-keyword">while</span> (q.peek() != <span class="hljs-keyword">null</span>) {<br>                        System.out.println(q.poll()); <span class="hljs-comment">//出队</span><br>  }<br>        }<br>}<br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br> <h2 id="stack">stack</h2><br> <p>方法：push, pop, peek, isEmpty, size</p><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-keyword"><code class="language-language-java hljs"><span class="hljs-keyword">import</span> java.util.Stack;  <p></p>
+<p><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestStack</span> </span>{<br>        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br>                Stack<Integer> s = <span class="hljs-keyword">new</span> Stack<Integer>();<span class="hljs-comment">//初始化</span><br> <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i < <span class="hljs-number">10</span>; i++) {<br>                        s.push(i); <span class="hljs-comment">//入栈</span><br>  }<br>                <span class="hljs-comment">//集合遍历方式 </span><br> <span class="hljs-keyword">for</span> (Integer x : s) {<br>                        System.out.println(x);<br>                }<br>                System.out.println(<span class="hljs-string">"------1-----"</span>);<br>                <span class="hljs-comment">//栈弹出遍历方式 </span><br><span class="hljs-comment">//                while (s.peek()!=null) {     //不健壮的判断方式，容易抛异常，正确写法是下面的 </span><br> <span class="hljs-keyword">while</span> (!s.isEmpty()) {<br>                        System.out.println(s.pop()); <span class="hljs-comment">//出栈</span><br>  }<br>                System.out.println(<span class="hljs-string">"------2-----"</span>);<br>                <span class="hljs-comment">//错误的遍历方式 </span><br><span class="hljs-comment">//                for (Integer x : s) { </span><br><span class="hljs-comment">//                        System.out.println(s.pop()); </span><br><span class="hljs-comment">//                } </span><br>  }<br>}<br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br> <h2 id="set">set</h2><br> <p>初始化</p><br> <pre class="line-numbers language-language-java hljs">Set&lt;Integer&gt; set = <span class="hljs-keyword">new</span> HashSet&lt;&gt;();<br><span class="hljs-comment">//把集合如Stack、Queue、List等Collection作为参数</span><br>List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;....;<br>Set&lt;Integer&gt; set = <span class="hljs-keyword">new</span> HashSet&lt;&gt;(list);<br></code></pre><br> <p>方法：add, remove, contains, isEmpty, size</p><br> <h2 id="优先队列-priorityqueue-heap">优先队列 PriorityQueue (Heap)</h2><br> <p>底层是一颗数， 以小根堆为例</p><br> <p>初始化</p><br> <pre><code class="language-java hljs"><span class="hljs-comment">//小根堆</span><br>Queue&lt;Integer&gt; minH = <span class="hljs-keyword">new</span> PriorityQueue&lt;&gt;();    <span class="hljs-comment">// 小根堆，默认大小为11 相当于 new PriorityQueue&lt;&gt;(11)</span><br>Queue&lt;Integer&gt; minH = <span class="hljs-keyword">new</span> PriorityQueue&lt;&gt;(<span class="hljs-number">100</span>);  <span class="hljs-comment"><code class="language-language-java hljs">Set&lt;Integer&gt; set = <span class="hljs-keyword">new</span> HashSet&lt;&gt;();<br><span class="hljs-comment">//把集合如Stack、Queue、List等Collection作为参数</span><br>List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;....;<br>Set&lt;Integer&gt; set = <span class="hljs-keyword">new</span> HashSet&lt;&gt;(list);<br></code></pre><br> <p>方法：add, remove, contains, isEmpty, size</p><br> <h2 id="优先队列-priorityqueue-heap">优先队列 PriorityQueue (Heap)</h2><br> <p>底层是一颗数， 以小根堆为例</p><br> <p>初始化</p><br> <pre><code class="language-java hljs"><span class="hljs-comment">//小根堆</span><br>Queue&lt;Integer&gt; minH = <span class="hljs-keyword">new</span> PriorityQueue&lt;&gt;();    <span class="hljs-comment">// 小根堆，默认大小为11 相当于 new PriorityQueue&lt;&gt;(11)</span><br>Queue&lt;Integer&gt; minH = <span class="hljs-keyword">new</span> PriorityQueue&lt;&gt;(<span class="hljs-number">100</span>);  <span class="hljs-comment">// 定义一个默认容量有100的小根堆。在当中增加元素会扩容，只是开始指定大小。不是size，是capacity</span>  <p></p>
+<p><span class="hljs-comment">//大根堆</span><br>Queue<Integer> maxH = <span class="hljs-keyword">new</span> PriorityQueue<>((i1, i2) -> i2 - i1);    <span class="hljs-comment">// 大根堆，默认大小为11 相当于 new PriorityQueue<>(11, (i1, i2) -> i2 - i1)</span><br>Queue<Integer> maxH = <span class="hljs-keyword">new</span> PriorityQueue<>(<span class="hljs-number">100</span>, (i1, i2) -> i2 - i1);    <span class="hljs-comment">// 定义一个默认容量有100的大根堆。在当中增加元素会扩容，只是开始指定大小</span><br></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br> <p>方法：offer, poll, peek, isEmpty, size</p><br> <h1 id="数组">数组</h1><br> <h2 id="静态数组">静态数组</h2><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-comment">//一维</span><br>String[] s = <span class="hljs-keyword">new</span> String[<span class="hljs-number">3</span>];<br><span class="hljs-keyword">char</span>[] b = <span class="hljs-keyword">new</span> <span class="hljs-keyword">char</span>[]{<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>};<br><span class="hljs-comment">//二维</span><br><span class="hljs-comment">// 二维</span><br><span class="hljs-keyword">int</span>[][] c = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">10</span>][<span class="hljs-number">10</span>];<br></code></pre><br> <p><code>.length</code> <em>记得是属性而不是方法 <code>arr.length</code> 没有()</em></p><br> <p>Arrays.sort从小到大排序</p><br> <pre><code class="language-java hljs">Arrays.sort(<span class="hljs-keyword">int</span>[] arr) <span class="hljs-comment">//从小到大排序</span><br>Arrays.sort(<span class="hljs-keyword">int</span>[] arr, <span class="hljs-keyword">int</span> fromIndex, <span class="hljs-keyword">int</span> toIndex) <span class="hljs-comment">// [)</span><br>Arrays.sort(<span class="hljs-keyword">int</span>[] arr, <span class="hljs-keyword">int</span> fromIndex, <span class="hljs-keyword">int</span> toIndex, 比较器); <span class="hljs-comment">//一定是需要泛型</span><br>Arrays.sort(arr, (o1, o2) -&gt; o2 - o1); <span class="hljs-comment">//数组全部 从大到小排序 跟Collections.sort()一样</span><br>Arrays.sort(arr, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>, (o1, o2) -&gt; o2 - o1); <span class="hljs-comment"><code class="language-language-java hljs"><span class="hljs-comment">//一维</span><br>String[] s = <span class="hljs-keyword">new</span> String[<span class="hljs-number">3</span>];<br><span class="hljs-keyword">char</span>[] b = <span class="hljs-keyword">new</span> <span class="hljs-keyword">char</span>[]{<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>};<br><span class="hljs-comment">//二维</span><br><span class="hljs-comment">// 二维</span><br><span class="hljs-keyword">int</span>[][] c = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">10</span>][<span class="hljs-number">10</span>];<br></code></pre><br> <p><code>.length</code> <em>记得是属性而不是方法 <code>arr.length</code> 没有()</em></p><br> <p>Arrays.sort从小到大排序</p><br> <pre><code class="language-java hljs">Arrays.sort(<span class="hljs-keyword">int</span>[] arr) <span class="hljs-comment">//从小到大排序</span><br>Arrays.sort(<span class="hljs-keyword">int</span>[] arr, <span class="hljs-keyword">int</span> fromIndex, <span class="hljs-keyword">int</span> toIndex) <span class="hljs-comment">// [)</span><br>Arrays.sort(<span class="hljs-keyword">int</span>[] arr, <span class="hljs-keyword">int</span> fromIndex, <span class="hljs-keyword">int</span> toIndex, 比较器); <span class="hljs-comment">//一定是需要泛型</span><br>Arrays.sort(arr, (o1, o2) -&gt; o2 - o1); <span class="hljs-comment">//数组全部 从大到小排序 跟Collections.sort()一样</span><br>Arrays.sort(arr, <span class="hljs-number">0</span>, <span class="hljs-number">3</span>, (o1, o2) -&gt; o2 - o1); <span class="hljs-comment">//从大到小排序，只排序[0, 3)</span>  <p></p>
+<p></p><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><br> <p>Arrays.fill填满一个数组</p><br> <pre class="line-numbers language-language-java hljs"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">5</span>];<br>Arrays.fill(a, <span class="hljs-number">1</span>);<br></code></pre><br> <p>Arrays.copyOf / arr.clone()复制一个数组(二维数组也可以)</p><br> <pre><code class="language-java hljs"><span class="hljs-keyword">int</span> [] a =  <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span> [ <span class="hljs-number">5</span> ];<br><span class="hljs-keyword">int</span> [] newA = Array.copyOf(a,  <span class="hljs-number">5</span> );<br><span class="hljs-comment">// or</span><br><span class="hljs-keyword">int</span> [][] a = {{ <span class="hljs-number">1</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> , <span class="hljs-number">3</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> , <span class="hljs-number">3</span> , <span class="hljs-number">4</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> , <span class="hljs-number">3</span> , <span class="hljs-number">4</span> , <span class="hljs-number">5</span> }};  <span class="hljs-comment">// 不是5<em>5，第一维1 2 3 4 5</em></span><br><span class="hljs-keyword">int</span> [][] newa = a.clone();  <span class="hljs-comment">// 不是5<em>5矩阵</em></span><br></code></pre><br> <p>相等比较</p><br> <p><code>System.out.println(Arrays.equals(arr1,arr2))</code></p><br> <blockquote><br> <p>arr1.equals(arr2)比较的是两个对象的地址，不是里面的数，而Arrays.equals重写了equals，所以，这里能比较元素是否相等。</p><br> </blockquote><br> <p>二分查找法找指定元素的索引值（下标）</p><br> <pre><code class="language-java hljs"><span class="hljs-keyword">int</span> []arr = {<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>,<span class="hljs-number">50</span>};<br>System.out.println(Arrays.binarySearch(arr, <span class="hljs-number">20</span>));<span class="hljs-comment">//找不到的话返回-x</span><br></code></pre><br> <p>截取数组：copeOf和copeOfRange</p><br> <pre><code class="language-java hljs"><span class="hljs-keyword">int</span> []arr = {<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>,<span class="hljs-number">50</span>};<br><span class="hljs-keyword">int</span> []arr1 = Arrays.copyOf(arr, <span class="hljs-number">3</span>);<span class="hljs-comment">//截取arr数组的3个元素赋值给姓数组arr1  10 20 30 </span><br><span class="hljs-keyword">int</span> []arr = {<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>,<span class="hljs-number">50</span>};<br><span class="hljs-keyword">int</span> []arr1 = Arrays.copyOfRange(arr,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>);<span class="hljs-comment">// [) 10 20</span><br></code></pre><br> <h2 id="动态数组">动态数组</h2><br> <pre><code class="language-java hljs">List&lt;Integer&gt; array = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();    <span class="hljs-comment">// 数组</span><br>List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> LinkedList&lt;&gt;();    <span class="hljs-comment">// 链表</span><br>List&lt;List&lt;Integer&gt;&gt; = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();   <span class="hljs-comment">//二维数组</span><br></code></pre><br> <p>List接口方法:<strong>get, size, add, remove, subList</strong></p><br> <pre><code class="language-java hljs">.get(<span class="hljs-keyword">int</span> index)<br>.size()<br>.add(E e)    <span class="hljs-comment">// 在尾部添加一个元素e --- O(1)</span><br>.add(<span class="hljs-keyword">int</span> index, E e)    <span class="hljs-comment">// 在index位置插一个元素e --- O(n)</span><br>.remove(<span class="hljs-keyword">int</span> index)    <span class="hljs-comment">// 删除位于index的元素，并返回删除元素e</span><br>list.remove(list.size() - <span class="hljs-number">1</span>);<br>.subList(<span class="hljs-keyword">int</span> from, <span class="hljs-keyword">int</span> to)    <span class="hljs-comment">// 相当于返回原数组的一个片段,但不要对其进行改动，改动会影响原数组</span><br></code></pre><br> <p><code>Collections.sort(list);</code> 从小到大排序<br><br> <code>Collections.sort(list, (o1, o2) -&gt; o2 - o1);</code> 从大到小排序， 第二个参数为一个比较器</p><br> <h1 id="math">Math</h1><br> <pre><code class="hljs cpp">Math.max(<span class="hljs-keyword">long</span> a, <span class="hljs-keyword">long</span> b)<br>Math.<span class="hljs-built_in">sqrt</span>(<span class="hljs-keyword">double</span> a)<br>Math.<span class="hljs-built_in">abs</span>(<span class="hljs-keyword">double</span> a) <span class="hljs-comment">//返回一个类型和参数类型一致的绝对值</span><br>Math.<span class="hljs-built_in">pow</span>(<span class="hljs-keyword">double</span> a, <span class="hljs-keyword">double</span> b)<br></code></pre><br> <p>取整</p><br> <pre><code class="hljs cpp">Math.<span class="hljs-built_in">ceil</span>(<span class="hljs-keyword">double</span> x);<span class="hljs-comment">//向上取整</span><br>Math.<span class="hljs-built_in">floor</span>(<span class="hljs-keyword">double</span> x);<span class="hljs-comment">//向下取整</span><br>Math.round(<span class="hljs-keyword">double</span> x);<span class="hljs-comment">//四舍五入</span><br></code></pre><br> <p>随机数，生成一个[0,1)之间的double类型的伪随机数</p><br> <pre><code class="hljs cpp">Math.random()<br><span class="hljs-keyword">int</span> a = (<span class="hljs-keyword">int</span>)(Math.random()b + <span class="hljs-number">1</span>); <span class="hljs-comment">// [1, b]</span><br><span class="hljs-keyword">int</span> a = (<span class="hljs-keyword">int</span>)(Math.random()(b - a + <span class="hljs-number">1</span>) + a);    <span class="hljs-comment"><code class="language-language-java hljs"><span class="hljs-keyword">int</span>[] a = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">5</span>];<br>Arrays.fill(a, <span class="hljs-number">1</span>);<br></code></pre><br> <p>Arrays.copyOf / arr.clone()复制一个数组(二维数组也可以)</p><br> <pre><code class="language-java hljs"><span class="hljs-keyword">int</span> [] a =  <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span> [ <span class="hljs-number">5</span> ];<br><span class="hljs-keyword">int</span> [] newA = Array.copyOf(a,  <span class="hljs-number">5</span> );<br><span class="hljs-comment">// or</span><br><span class="hljs-keyword">int</span> [][] a = {{ <span class="hljs-number">1</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> , <span class="hljs-number">3</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> , <span class="hljs-number">3</span> , <span class="hljs-number">4</span> }, { <span class="hljs-number">1</span> , <span class="hljs-number">2</span> , <span class="hljs-number">3</span> , <span class="hljs-number">4</span> , <span class="hljs-number">5</span> }};  <span class="hljs-comment">// 不是5<em>5，第一维1 2 3 4 5</em></span><br><span class="hljs-keyword">int</span> [][] newa = a.clone();  <span class="hljs-comment">// 不是5<em>5矩阵</em></span><br></code></pre><br> <p>相等比较</p><br> <p><code>System.out.println(Arrays.equals(arr1,arr2))</code></p><br> <blockquote><br> <p>arr1.equals(arr2)比较的是两个对象的地址，不是里面的数，而Arrays.equals重写了equals，所以，这里能比较元素是否相等。</p><br> </blockquote><br> <p>二分查找法找指定元素的索引值（下标）</p><br> <pre><code class="language-java hljs"><span class="hljs-keyword">int</span> []arr = {<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>,<span class="hljs-number">50</span>};<br>System.out.println(Arrays.binarySearch(arr, <span class="hljs-number">20</span>));<span class="hljs-comment">//找不到的话返回-x</span><br></code></pre><br> <p>截取数组：copeOf和copeOfRange</p><br> <pre><code class="language-java hljs"><span class="hljs-keyword">int</span> []arr = {<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>,<span class="hljs-number">50</span>};<br><span class="hljs-keyword">int</span> []arr1 = Arrays.copyOf(arr, <span class="hljs-number">3</span>);<span class="hljs-comment">//截取arr数组的3个元素赋值给姓数组arr1  10 20 30 </span><br><span class="hljs-keyword">int</span> []arr = {<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>,<span class="hljs-number">50</span>};<br><span class="hljs-keyword">int</span> []arr1 = Arrays.copyOfRange(arr,<span class="hljs-number">1</span>,<span class="hljs-number">3</span>);<span class="hljs-comment">// [) 10 20</span><br></code></pre><br> <h2 id="动态数组">动态数组</h2><br> <pre><code class="language-java hljs">List&lt;Integer&gt; array = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();    <span class="hljs-comment">// 数组</span><br>List&lt;Integer&gt; list = <span class="hljs-keyword">new</span> LinkedList&lt;&gt;();    <span class="hljs-comment">// 链表</span><br>List&lt;List&lt;Integer&gt;&gt; = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();   <span class="hljs-comment">//二维数组</span><br></code></pre><br> <p>List接口方法:<strong>get, size, add, remove, subList</strong></p><br> <pre><code class="language-java hljs">.get(<span class="hljs-keyword">int</span> index)<br>.size()<br>.add(E e)    <span class="hljs-comment">// 在尾部添加一个元素e --- O(1)</span><br>.add(<span class="hljs-keyword">int</span> index, E e)    <span class="hljs-comment">// 在index位置插一个元素e --- O(n)</span><br>.remove(<span class="hljs-keyword">int</span> index)    <span class="hljs-comment">// 删除位于index的元素，并返回删除元素e</span><br>list.remove(list.size() - <span class="hljs-number">1</span>);<br>.subList(<span class="hljs-keyword">int</span> from, <span class="hljs-keyword">int</span> to)    <span class="hljs-comment">// 相当于返回原数组的一个片段,但不要对其进行改动，改动会影响原数组</span><br></code></pre><br> <p><code>Collections.sort(list);</code> 从小到大排序<br><br> <code>Collections.sort(list, (o1, o2) -&gt; o2 - o1);</code> 从大到小排序， 第二个参数为一个比较器</p><br> <h1 id="math">Math</h1><br> <pre><code class="hljs cpp">Math.max(<span class="hljs-keyword">long</span> a, <span class="hljs-keyword">long</span> b)<br>Math.<span class="hljs-built_in">sqrt</span>(<span class="hljs-keyword">double</span> a)<br>Math.<span class="hljs-built_in">abs</span>(<span class="hljs-keyword">double</span> a) <span class="hljs-comment">//返回一个类型和参数类型一致的绝对值</span><br>Math.<span class="hljs-built_in">pow</span>(<span class="hljs-keyword">double</span> a, <span class="hljs-keyword">double</span> b)<br></code></pre><br> <p>取整</p><br> <pre><code class="hljs cpp">Math.<span class="hljs-built_in">ceil</span>(<span class="hljs-keyword">double</span> x);<span class="hljs-comment">//向上取整</span><br>Math.<span class="hljs-built_in">floor</span>(<span class="hljs-keyword">double</span> x);<span class="hljs-comment">//向下取整</span><br>Math.round(<span class="hljs-keyword">double</span> x);<span class="hljs-comment">//四舍五入</span><br></code></pre><br> <p>随机数，生成一个[0,1)之间的double类型的伪随机数</p><br> <pre><code class="hljs cpp">Math.random()<br><span class="hljs-keyword">int</span> a = (<span class="hljs-keyword">int</span>)(Math.random()b + <span class="hljs-number">1</span>); <span class="hljs-comment">// [1, b]</span><br><span class="hljs-keyword">int</span> a = (<span class="hljs-keyword">int</span>)(Math.random()(b - a + <span class="hljs-number">1</span>) + a);    <span class="hljs-comment">//[a, b]</span><br><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>  <p></p>
+ </div>  
+ <div class="clear"></div>  
+ </div>  
+</div>  
+  
+
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Mr.Yang</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="http://yangminghong.top/2021/08/19/java-shua-ti-chang-yong-api/">http://yangminghong.top/2021/08/19/java-shua-ti-chang-yong-api/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Mr.Yang</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
+                                <a href="/tags/LeetCode/">
+                                    <span class="chip bg-color">LeetCode</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/08/19/java-shua-ti-chang-yong-api/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/46.jpg" class="responsive-img" alt="【转载、学习】Java刷题常用API">
+                        
+                        <span class="card-title">【转载、学习】Java刷题常用API</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                              
+  
+  
+   
+   
+   
+ Title  
+
+
+  
+  
+  
+   
+ [Java刷题常用API](https://www.cnblogs.com/chzhyang/p/13494554.html)
+   
+   
+  
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-19
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Java/" class="post-category">
+                                    Java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
+                    <a href="/tags/LeetCode/">
+                        <span class="chip bg-color">LeetCode</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/08/13/zu-hui-fen-xiang-si/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="【学习】大组会分享④">
+                        
+                        <span class="card-title">【学习】大组会分享④</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            [组会分享] Deep Temporal Point ProcessesA temporal point process is a mathematical model for a time series of discrete event
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%BA%A4%E6%B5%81%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    交流学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%97%91%E7%9B%90/">
+                        <span class="chip bg-color">嗑盐</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: 小杨同学のBlog<br />'
+            + '文章作者: Mr.Yang<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+<!-- 代码块折行 -->
+
+<style type="text/css">
+code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }
+</style>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+    <div class="container row center-align" style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+			<span class="with-love" id="heart"><i class="fa fa-heart" style="color:#ff71a8"></i> </span>
+			
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <a href="/about" target="_blank">Mr.Yang
+			
+			<span class="with-love" id="heart"><i class="fa fa-heart" style="color:#ff71a8"></i> </span>
+			</a>
+			
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">52.2k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <span id="sitetime">载入运行时间...</span>
+			
+			</span><span class="my-face">ღゝ◡╹)ノ♡</span>
+			
+			
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "5";
+                    var startDate = "12";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            
+            <br>
+            
+            <span id="icp"><img src="/medias/icp.png" style="vertical-align: text-bottom;" />
+                <a href="http://www.beian.miit.gov.cn" target="_blank">渝ICP备20000649号</a>
+            </span>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/ray-yang521" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+
+<i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:525885186@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=525885186" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 525885186" data-position="top" data-delay="50">
+        
+<i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/search.xml", 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.5'
+        zIndex="-1" count="199"
+        src="/libs/background/canvas-nest.js"></script>
+    
+
+    
+    
+    <script type="text/javascript" size="150" alpha='0.6'
+        zIndex="-1" src="/libs/background/ribbon-refresh.min.js" async="async"></script>
+    
+
+    
+    <script type="text/javascript" src="/libs/background/ribbon-dynamic.js" async="async"></script>
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+	
+	
+	<script type="text/javascript">
+		var OriginTitile = document.title,
+			st;
+		document.addEventListener("visibilitychange", function () {
+			document.hidden ? (document.title = "看不见我🙈~看不见我🙈~", clearTimeout(st)) : (document.title =
+				"(๑•̀ㅂ•́) ✧被发现了～", st = setTimeout(function () {
+					document.title = OriginTitile
+				}, 3e3))
+		})
+	</script>
+	
+	
+	<!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
+        
+            <script src="/js/wenzi.js" type="text/javascript"></script>
+        
+		
+	<!-- 背景樱花飘落特效 洪卫 shw2018 add 2019.09.10 -->
+    
+        <script type="text/javascript">
+		//只在桌面版网页启用特效
+        var windowWidth = $(window).width();
+        if (windowWidth > 768) {
+                document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
+            }
+        </script>
+    
+	
+	<!-- 天气接口  YMH  2020年6月2日 03:35:23 -->
+	
+	<!-- 天气接口  YMH  2020年6月2日 03:35:23 -->
+<script type="text/javascript">
+  WIDGET = {FID: 'eq6UcRDUIR'}
+</script>
+<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
+
+<script type="text/javascript">
+  //只在桌面版网页启用特效
+  var windowWidth = $(window).width();
+  if (windowWidth > 768) {
+      document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');
+  }
+  </script>
+	
+	
+	<!-- 全局暗夜模式  YMH  2021年1月9日 19:07:23 -->
+	<script> 
+		if (localStorage.getItem('dark') === '1') { 
+		document.body.classList.add('dark'); 
+		} 
+		else if (new Date().getHours() >= 23.5 || new Date().getHours() < 7) { 
+		document.body.classList.add('dark'); 
+		} 
+		else if (matchMedia('(prefers-color-scheme: dark)').matches) { 
+		document.body.classList.add('dark'); } 
+		</script> 
+		
+		<a onclick="switchNightMode()" id="sma"> 
+			<i class="fa fa-moon-o" id="nightMode" aria-hidden="true"></i> 
+		</a>
+		
+		<!-- 网站主题切换模式开始  YMH  2021年1月9日 19:07:23 -->
+		<script>
+		if (localStorage.getItem('themespring') === '1') {
+			document.body.classList.add('themespring');
+		} else if (matchMedia('(prefers-color-scheme: themespring)').matches) {
+			document.body.classList.add('themespring');
+		}
+
+		function switchThemes() {
+			var body = document.body;
+			if (body.classList.contains('themespring')) {
+				document.body.classList.remove('themespring');
+				localStorage.setItem('themespring', '0');
+				document.querySelector(".deng-box").style.display = "none";
+				document.querySelector(".deng-box1").style.display = "none";
+				return;
+			} else {
+				document.body.classList.add('themespring');
+				localStorage.setItem('themespring', '1');
+				document.querySelector(".deng-box").style.display = "block";
+				document.querySelector(".deng-box1").style.display = "block";
+				return;
+			}
+		}; 
+		</script>
+		<!-- 春节主题 按钮 --> 
+		<a onclick="switchThemes()" id="switchspring"> 
+			<img class="chunjiepic" src="https://nekodeng.gitee.io/medias/spring-img/caishen.png" title="节日模式"> 
+		</a>
+		<!-- 网站主题切换模式结束  YMH  2021年1月9日 19:07:23 -->
+
+
+
+</body>
+
+</html>
