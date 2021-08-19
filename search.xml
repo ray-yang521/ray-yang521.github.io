@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>解决no supported authentication methods avaiable</title>
+      <link href="/2021/08/20/jie-jue-no-supported-authentication-methods-avaiable/"/>
+      <url>/2021/08/20/jie-jue-no-supported-authentication-methods-avaiable/</url>
+      
+        <content type="html"><![CDATA[<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>解决no supported authentication methods avaiable</p><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>使用TortoiseGit向github和gitee远程推送文件的时候，报错 no supported authentication methods avaiable</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>因为TortoiseGit和Git的冲突我们需要把乌龟git设置改正如下：</p><ul><li>在Git仓库文件夹下单击右键，依次打开TortoiseGit–&gt;Settings–&gt;Network，如下：<br><img src="/2021/08/20/jie-jue-no-supported-authentication-methods-avaiable/1.png?v=1&amp;type=image" alt=""></li><li>上图红色方框处，将SSH client指向C:\Program Files\Git\usr\bin\ssh.exe （此处的路径是我的Git安装路径，请根据自己Git安装路径填写）</li><li>再次尝试推送，成功！<br><img src="/2021/08/20/jie-jue-no-supported-authentication-methods-avaiable/2.png?v=1&amp;type=image" alt=""></li></ul><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 踩坑记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+            <tag> TortoiseGit </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>【转载、学习】Java刷题常用API</title>
       <link href="/2021/08/19/java-shua-ti-chang-yong-api/"/>
       <url>/2021/08/19/java-shua-ti-chang-yong-api/</url>
