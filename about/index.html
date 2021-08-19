@@ -654,7 +654,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"备忘","value":5},{"name":"Spring","value":26},{"name":"总结","value":2},{"name":"Java","value":1},{"name":"小结","value":1},{"name":"特别礼物","value":1},{"name":"交流学习","value":4},{"name":"踩坑记录","value":2},{"name":"想法","value":1}],
+                data: [{"name":"Spring","value":26},{"name":"备忘","value":5},{"name":"总结","value":2},{"name":"Java","value":1},{"name":"小结","value":1},{"name":"特别礼物","value":1},{"name":"交流学习","value":4},{"name":"踩坑记录","value":2},{"name":"想法","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -861,17 +861,17 @@
         <div class="tag-chips center-align">
             
             
-            <a href="/tags/ArcGIS/">
-                <span class="chip center-align waves-effect waves-light chip-default">ArcGIS</span>
-            </a>
-            
-            
-            
             <a href="/tags/Spring/">
                 <span class="chip center-align waves-effect waves-light chip-default">Spring</span>
             </a>
             
             
+            
+            
+            
+            <a href="/tags/ArcGIS/">
+                <span class="chip center-align waves-effect waves-light chip-default">ArcGIS</span>
+            </a>
             
             
             
@@ -977,6 +977,12 @@
             
             
             
+            <a href="/tags/hexo/">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
+            </a>
+            
+            
+            
             <a href="/tags/Git/">
                 <span class="chip center-align waves-effect waves-light chip-default">Git</span>
             </a>
@@ -985,12 +991,6 @@
             
             <a href="/tags/TortoiseGit/">
                 <span class="chip center-align waves-effect waves-light chip-default">TortoiseGit</span>
-            </a>
-            
-            
-            
-            <a href="/tags/hexo/">
-                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
             </a>
             
             
@@ -1347,6 +1347,34 @@ $(function () {
     
 
     
+        <script src="//code.tidio.co/oylxwkurniyijanfawbtx1i43uqldbls.js"></script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);
+                function change_Tidio() {
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                }
+            });
+        </script>
+    
 
     
 
@@ -1466,6 +1494,6 @@ $(function () {
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"superSample":2,"position":"left","width":150,"height":300,"hOffset":0,"vOffset":-20},"mobile":{"show":true,"scale":0.7},"react":{"opacity":0.8}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"superSample":2,"position":"right","width":150,"height":300,"hOffset":30,"vOffset":-20},"mobile":{"show":true,"scale":0.7},"react":{"opacity":0.8}});</script></body>
 
 </html>
