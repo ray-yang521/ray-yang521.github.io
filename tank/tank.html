@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh" class="no-js demo-1">
+	<head>
+	  <title>坦克大战</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<script src="/js/tk/jquery.min.js"></script>
+		<script src="/js/tk/Helper.js"></script>
+		<script src="/js/tk/keyboard.js"></script>
+		<script src="/js/tk/const2.js"></script>
+		<script src="/js/tk/level.js"></script>
+		<script src="/js/tk/crackAnimation.js"></script>
+		<script src="/js/tk/prop.js"></script>
+		<script src="/js/tk/bullet.js"></script>
+		<script src="/js/tk/tank.js"></script>
+		<script src="/js/tk/num.js"></script>
+		<script src="/js/tk/menu.js"></script>
+		<script src="/js/tk/map.js"></script>
+		<script src="/js/tk/Collision.js"></script>
+		<script src="/js/tk/stage.js"></script>
+		<script src="/js/tk/main.js"></script>
+		<style type="text/css">
+			#canvasDiv canvas{
+	position:absolute;
+	left: 572px;
+	top: 187px;
+	width: 878px;
+	height: 672px;
+			}
+		body {
+	background-color: #000000;
+}
+body,td,th {
+	color: #FFFFFF;
+}
+</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+	<body>
+	    <div align="center">
+		<div class="container">
+		    <head><h3>&nbsp;</h3>
+		    <h3>&nbsp;</h3>
+		    <h3>建议用电脑玩：
+			  <br>
+			  玩家1：wasd上左下右，space射击；
+			  <br>
+			  玩家2：方向键，enter射击。n下一关，p上一关。
+			  <a href='http://yangminghong.top'>返回主页</a>	</h3>
+		    </head>
+			<div class="main clearfix">
+				<div id="canvasDiv" >
+					<canvas id="wallCanvas" ></canvas> 
+					<canvas id="tankCanvas" ></canvas>
+					<canvas id="grassCanvas" ></canvas>
+					<canvas id="overCanvas" ></canvas> 
+					<canvas id="stageCanvas" ></canvas>
+				</div>
+			</div>
+		</div>
+		</div><!-- /container -->	
+	</body>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?a0a6d717ed5f5366489b5f12eadaa25f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+	
+</html>
