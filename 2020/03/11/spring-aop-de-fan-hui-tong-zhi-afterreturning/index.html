@@ -959,7 +959,7 @@
 
     #vcomments textarea {
         box-sizing: border-box;
-        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+        background: url("/medias/background.webp") 100% 100% no-repeat;
     }
 
     #vcomments p {
@@ -1201,12 +1201,12 @@
         appId: 'kjO0Wxd3j8mK5tjgIJMsGeEQ-gzGzoHsz',
         appKey: 'BWKL68glT2g3xreBkiyWR16U',
         notify: 'false' === 'true',
-        verify: 'false' === 'true',
+        verify: 'true' === 'true',
         visitor: 'true' === 'true',
         avatar: 'https://s.gravatar.com/avatar/0007991f99268c04f1aa4cdd9bea93b4?s=80',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: 'just go go'
+        placeholder: '请开始您的表演！'
     });
 </script>
 
@@ -1794,7 +1794,7 @@ $(function () {
 		if (localStorage.getItem('dark') === '1') { 
 		document.body.classList.add('dark'); 
 		} 
-		else if (new Date().getHours() >= 23.5 || new Date().getHours() < 7) { 
+		else if (new Date().getHours() >= 3 && new Date().getHours() <= 5) { 
 		document.body.classList.add('dark'); 
 		} 
 		else if (matchMedia('(prefers-color-scheme: dark)').matches) { 
