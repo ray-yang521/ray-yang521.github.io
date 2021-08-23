@@ -500,7 +500,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-	// $('.bg-cover').css('background-image', 'url(/medias/banner/5.jpg)');
+	// $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
 	$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getMinutes() + '.jpg)');
 </script>
 
@@ -593,19 +593,19 @@
                 </a>
                 
                 
-                <a href="/tags/Node-js/" title="Node.js: 1">
+                <a href="/tags/deep-learning/" title="deep learning: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Node.js" style="background-color: #A3E4D7;">Node.js
+                            data-tagname="deep learning" style="background-color: #A3E4D7;">deep learning
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/Windows/" title="Windows: 1">
+                <a href="/tags/time-series-forecasting/" title="time series forecasting: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="Windows" style="background-color: #85C1E9;">Windows
+                            data-tagname="time series forecasting" style="background-color: #85C1E9;">time series forecasting
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -620,19 +620,19 @@
                 </a>
                 
                 
-                <a href="/tags/deep-learning/" title="deep learning: 1">
+                <a href="/tags/Node-js/" title="Node.js: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="deep learning" style="background-color: #F9E79F;">deep learning
+                            data-tagname="Node.js" style="background-color: #F9E79F;">Node.js
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/tags/time-series-forecasting/" title="time series forecasting: 1">
+                <a href="/tags/Windows/" title="Windows: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            data-tagname="time series forecasting" style="background-color: #D7BDE2;">time series forecasting
+                            data-tagname="Windows" style="background-color: #F8F9F9;">Windows
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -1112,18 +1112,34 @@ $(function () {
 	<!-- 天气接口  YMH  2020年6月2日 03:35:23 -->
 	
 	<!-- 天气接口  YMH  2020年6月2日 03:35:23 -->
-<script type="text/javascript">
-  WIDGET = {FID: 'eq6UcRDUIR'}
-</script>
-<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> -->
-
-<script type="text/javascript">
-  //只在桌面版网页启用特效
-  var windowWidth = $(window).width();
-  if (windowWidth > 768) {
-      document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>');
+<div id="he-plugin-simple"></div>
+<script>
+WIDGET = {
+  "CONFIG": {
+    "modules": "01234",
+    "background": "1",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "FFFFFF",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "10",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "10",
+    "top": "70",
+    "key": "233d6ddb7a9c493c86dbd7cea54dd2d9"
   }
-  </script>
+}
+</script>
+<script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
 	
 	
 	<!-- 全局暗夜模式  YMH  2021年1月9日 19:07:23 -->
