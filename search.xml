@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>深度学习GPU环境CUDA配置小白攻略</title>
+      <link href="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/"/>
+      <url>/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/</url>
+      
+        <content type="html"><![CDATA[<h2 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h2><p>最近需要在自己渣渣笔记本上跑一些深度学习的模型，遂需要重新配置CUDA环境，让渣渣显卡也发挥余热，顺便记录下配置过程，以备不时之需。<br>说明： CUDA是NVIDIA推出的并行计算平台，可以充分发挥GPU的性能。本文整合了基于NVIDIA显卡，安装CUDA和pytorch-gpu用于加速深度学习的配置说明。</p><h2 id="1、确认本机存在独立显卡"><a href="#1、确认本机存在独立显卡" class="headerlink" title="1、确认本机存在独立显卡"></a>1、确认本机存在独立显卡</h2><p>依次打开：<code>计算机管理-设备管理器-显示器适配</code>，获取本机独显型号，可以看到本机渣渣显卡<code>NVIDIA GeForce 940M</code>。<br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/2.png?v=1&amp;type=image" alt=""></p><h2 id="2、确认本机独显支持CUDA"><a href="#2、确认本机独显支持CUDA" class="headerlink" title="2、确认本机独显支持CUDA"></a>2、确认本机独显支持CUDA</h2><p>访问<a href="https://developer.nvidia.com/cuda-gpus" target="_blank" rel="noopener">NVIDIA网站</a>，点击下面的选项，查看该型号显卡是否支持CUDA。展开的列表里包含所有支持CUDA的显卡型号以及算力。经对比，本机的显卡支持CUDA，接下来就可以进行下一步。<br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/3.png?v=1&amp;type=image" alt=""><br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/4.png?v=1&amp;type=image" alt=""></p><h2 id="3、查看显卡驱动版本"><a href="#3、查看显卡驱动版本" class="headerlink" title="3、查看显卡驱动版本"></a>3、查看显卡驱动版本</h2><p>CUDA版本对于显卡驱动的版本有要求，需要下载支持显卡驱动的CUDA版本进行安装。<br>查看显卡驱动版本：打开控制台，进入以下目录：<code>C:\Program Files\NVIDIA Corporation\NVSMI</code>。输入<code>nvidia-smi</code>回车。可以看到，本机显卡驱动版本:<code>Driver Version: 398.75</code><br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/6.png?v=1&amp;type=image" alt=""></p><h2 id="4、下载对应版本的CUDA"><a href="#4、下载对应版本的CUDA" class="headerlink" title="4、下载对应版本的CUDA"></a>4、下载对应版本的CUDA</h2><p>根据本机驱动版本和下图，选择对应版本的CUDA。Windows中<code>&gt;=398.75</code>可选<code>CUDA 9.2</code>。<br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/5.png?v=1&amp;type=image" alt=""></p><h2 id="5、CUDA安装＆测试"><a href="#5、CUDA安装＆测试" class="headerlink" title="5、CUDA安装＆测试"></a>5、CUDA安装＆测试</h2><p><a href="https://link.zhihu.com/?target=https%3A//developer.nvidia.com/cuda-toolkit-archive">CUDA下载</a><br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/7.png?v=1&amp;type=image" alt=""><br>根据本机显卡驱动，我选择了<code>CUDA Toolkit 9.2</code>。下载下来安装包无脑安装就行。推荐默认路径C盘，改路径可能会出现问题。<br>测试：等待安装完成，打开控制台，输入<code>nvcc -V</code>查看是否安装成功，输出下图的CUDA版本即安装成功。<br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/8.png?v=1&amp;type=image" alt=""></p><h2 id="6、下载＆安装对应版本cuDNN"><a href="#6、下载＆安装对应版本cuDNN" class="headerlink" title="6、下载＆安装对应版本cuDNN"></a>6、下载＆安装对应版本cuDNN</h2><p>CUDA toolkit是一个GPU的工作平台，可以实现许多高性能并行运算，cuDNN是基于CUDA的深度学习GPU的加速库。安装完CUDA还需要安装对应版本的cuDNN才能实现在GPU上进行深度模型的运算。<br>cuDNN下载需要注册一个账号，然后去下载对应CUDA版本的cuDNN，<br>点击：<a href="https://link.zhihu.com/?target=https%3A//developer.nvidia.com/zh-cn/cudnn">cuDNN下载</a><br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/9.png?v=1&amp;type=image" alt=""><br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/10.png?v=1&amp;type=image" alt=""><br>解压cuDNN安装包，会有<code>bin、include、lib</code>三个文件，复制它们覆盖CUDA安装路径下的对应文件夹。<br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/11.png?v=1&amp;type=image" alt=""><br>至此，所有环境配置工作完成。</p><h2 id="7、pytorch-gpu安装＆配置"><a href="#7、pytorch-gpu安装＆配置" class="headerlink" title="7、pytorch-gpu安装＆配置"></a>7、pytorch-gpu安装＆配置</h2><p>由于项目代码通过pytorch实现，所以需要下载支持显卡进行深度学习的pytorch库：<code>pytorch-gpu</code><br>进入<a href="https://pytorch.org/" target="_blank" rel="noopener">pytorch官网</a>，可以看到很多版本。我们需要找到适配本机CUDA版本的<code>pytorch-gpu</code>。<br><code>pytorch-gpu</code>可以通过<code>conda</code>和<code>pip</code>两种方式进行安装。最初我使用<code>conda</code>的方式，结果安装非常慢，遂放弃，后续换为清华源，又出现镜像源没有对应版本的<code>pytorch-gpu</code>，然后默认给安装了<code>pytorch-cpu(only)</code>版本。最后是通过<code>pip</code>成功安装的：</p><pre><code>pip install --user torch==1.2.0+cu92 torchvision==0.4.0+cu92 -f https://download.pytorch.org/whl/torch_stable.html</code></pre><p><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/12.png?v=1&amp;type=image" alt=""><br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/13.png?v=1&amp;type=image" alt=""><br>安装好<code>pytorch-gpu</code>，测试：<br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/14.png?v=1&amp;type=image" alt=""><br>成功输出torch版本号和True：<br><img src="/2022/01/15/shen-du-xue-xi-gpu-huan-jing-cuda-pei-zhi-xiao-bai-gong-lue/15.png?v=1&amp;type=image" alt=""><br>然后就可以愉快地“炼丹”啦~</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 踩坑记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GPU </tag>
+            
+            <tag> CUDA </tag>
+            
+            <tag> pytorch </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决no supported authentication methods avaiable</title>
       <link href="/2021/08/20/jie-jue-no-supported-authentication-methods-avaiable/"/>
       <url>/2021/08/20/jie-jue-no-supported-authentication-methods-avaiable/</url>
